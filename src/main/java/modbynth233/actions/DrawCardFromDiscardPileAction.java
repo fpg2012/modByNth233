@@ -121,7 +121,7 @@ public class DrawCardFromDiscardPileAction extends AbstractGameAction {
                         }
 
                         --this.amount;
-                        if (!AbstractDungeon.player.drawPile.isEmpty()) {
+                        if (!AbstractDungeon.player.discardPile.isEmpty()) {
                             AbstractPlayer player = AbstractDungeon.player;
                             drawnCards.add(player.discardPile.getTopCard());
 

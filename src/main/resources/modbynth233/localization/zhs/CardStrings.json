@@ -135,7 +135,7 @@
   "${modID}:Test": {
     "NAME": "试探",
     "DESCRIPTION": "造成 !D! 点伤害 !M! 次 NL 每次造成伤害时，若对方的意图为攻击，获得1点敏捷，否则添加1张“良机”到手牌",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 !M! 次 NL 每次造成伤害时，若对方的意图为攻击，获得1点敏捷，否则添加1张“良机”到手牌"
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 !M! 次 NL 每次造成伤害时，若对方的意图为攻击，获得1点敏捷，否则添加1张“良机+”到手牌"
   },
   "${modID}:Reflect": {
     "NAME": "反省",
@@ -202,8 +202,8 @@
   },
   "${modID}:Doppelganger": {
     "NAME": "双重存在",
-    "DESCRIPTION": "下回合获得 X [E] NL 抽 X 张牌",
-    "UPGRADE_DESCRIPTION": "下回合获得 X + !M!  [E] NL 抽 X + !M! 张牌"
+    "DESCRIPTION": "下回合获得 X [E] NL 抽 X 张牌 NL 消耗",
+    "UPGRADE_DESCRIPTION": "下回合获得 X + !M! [E] NL 抽 X + !M! 张牌 NL 消耗"
   },
   "${modID}:PrudentStrike": {
     "NAME": "谨慎打击",

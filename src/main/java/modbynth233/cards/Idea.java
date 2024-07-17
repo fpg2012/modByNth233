@@ -22,8 +22,8 @@ public class Idea extends BaseCard {
             Tinclad.Meta.CARD_COLOR,
             CardType.SKILL,
             CardRarity.UNCOMMON,
-            CardTarget.SELF,
-            0
+            CardTarget.NONE,
+            -2
     );
 
     public Idea() {

@@ -33,7 +33,6 @@ public class Flaw extends BaseCard {
         setDamage(DAMAGE, UPG_DAMAGE);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         upgradeMagic = true;
-        upgradeDamage = true;
     }
 
     @Override

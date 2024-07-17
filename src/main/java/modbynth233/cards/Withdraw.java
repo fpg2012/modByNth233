@@ -15,7 +15,7 @@ public class Withdraw extends BaseCard {
     private static final int BLOCK = 2;
     private static final int UPG_BLOCK = 0;
     private static final int MAGIC_NUMBER = 3;
-    private static final int UPG_MAGIC_NUMBER = 4;
+    private static final int UPG_MAGIC_NUMBER = 1;
     private static final int UPG_COST = 1;
     
     public static final CardStats info = new CardStats(

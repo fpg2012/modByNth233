@@ -17,7 +17,7 @@ public class Defend extends BaseCard{
             1
     );
 
-    private static final int BLOCK = 3;
+    private static final int BLOCK = 4;
     private static final int UPG_BLOCK = 3;
 
     public Defend() {
