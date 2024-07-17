@@ -1,0 +1,228 @@
+{
+  "${modID}:ExampleCard": {
+    "NAME": "Name",
+    "DESCRIPTION": "Description.",
+    "UPGRADE_DESCRIPTION": "This will automatically be used if the card is upgraded. Remove it if unneeded.",
+    "EXTENDED_DESCRIPTION": [
+      "You can put more text in here.",
+      "If you need to use it for stuff.",
+      "Blizzard is a good example for this."
+    ]
+  },
+  "${modID}:StrongStrike": {
+    "NAME": "战士的馈赠",
+    "DESCRIPTION": "造成 !D! 点伤害",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 NL 固有",
+    "EXTENDED_DESCRIPTION": [
+      "让你见见我的真正实力！"
+    ]
+  },
+  "${modID}:Strike": {
+    "NAME": "打击",
+    "DESCRIPTION": "造成 !D! 点伤害",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害"
+  },
+  "${modID}:Defend": {
+    "NAME": "防御",
+    "DESCRIPTION": "获得 !B! 点格挡",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡"
+  },
+  "${modID}:Dodge": {
+    "NAME": "侧身",
+    "DESCRIPTION": "获得 !B! 点格挡 !M! 次",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡 !M! 次"
+  },
+  "${modID}:HiddenStrike": {
+    "NAME": "隐蔽打击",
+    "DESCRIPTION": "造成 !D! 点伤害 NL 若未造成伤害 NL 获得 !M! 点敏捷 NL 否则再造成 !D! 点伤害",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 NL 若未造成伤害 NL 获得 !M! 点敏捷 NL 否则再造成 !D! 点伤害"
+  },
+  "${modID}:Thorn": {
+    "NAME": "荆棘",
+    "DESCRIPTION": "获得 !M! 点荆棘",
+    "UPGRADE_DESCRIPTION": "获得 !M! 点荆棘"
+  },
+  "${modID}:Trap": {
+    "NAME": "布置陷阱",
+    "DESCRIPTION": "施加缓慢 NL 消耗",
+    "UPGRADE_DESCRIPTION": "施加缓慢 NL 消耗"
+  },
+  "${modID}:Lure": {
+    "NAME": "引诱",
+    "DESCRIPTION": "获得 !B! 点格挡 NL 敌人获得 !M! 点格挡",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡 NL 敌人获得 !M! 点格挡 NL 抽1张牌"
+  },
+  "${modID}:AttackAndBackwards": {
+    "NAME": "且战且退",
+    "DESCRIPTION": "失去6点血量 NL 获得 !M! 点敏捷",
+    "UPGRADE_DESCRIPTION": "失去6点血量 NL 获得 !M! 点敏捷"
+  },
+  "${modID}:Preparation": {
+    "NAME": "预备动作",
+    "DESCRIPTION": "获得2X点敏捷 NL 消耗",
+    "UPGRADE_DESCRIPTION": "获得2X+1点敏捷 NL 消耗"
+  },
+  "${modID}:ThornyShield": {
+    "NAME": "荆棘盾",
+    "DESCRIPTION": "失去所有敏捷 NL 获得等量荆棘",
+    "UPGRADE_DESCRIPTION": "失去所有敏捷 NL 获得等量荆棘"
+  },
+  "${modID}:Tumble": {
+    "NAME": "翻滚",
+    "DESCRIPTION": "失去2点敏捷 NL 若无缓冲，则获得一层缓冲",
+    "UPGRADE_DESCRIPTION": "失去2点敏捷 NL 若无缓冲，则获得一层缓冲"
+  },
+  "${modID}:Chance": {
+    "NAME": "良机",
+    "DESCRIPTION": "若敌人的意图非攻击 NL 则抽2张牌 NL 虚无",
+    "UPGRADE_DESCRIPTION": "若敌人的意图非攻击 NL 则获得 [E] 抽2张牌 NL 虚无"
+  },
+  "${modID}:Rope": {
+    "NAME": "绳索",
+    "DESCRIPTION": "失去3点敏捷 NL 施加 !M! 点缠绕",
+    "UPGRADE_DESCRIPTION": "失去3点敏捷 NL 施加 !M! 点缠绕"
+  },
+  "${modID}:Net": {
+    "NAME": "一网打尽",
+    "DESCRIPTION": "对所有敌人施加 !M! 点缠绕 NL 消耗",
+    "UPGRADE_DESCRIPTION": "对所有敌人施加 !M! 点缠绕"
+  },
+  "${modID}:Refresh": {
+    "NAME": "重整旗鼓",
+    "DESCRIPTION": "失去所有敏捷 NL 获得2倍格挡和1层残影，将负敏捷归零 NL 消耗",
+    "UPGRADE_DESCRIPTION": "失去所有敏捷 NL 获得失去敏捷数的3倍格挡和1层残影，将负敏捷归零"
+  },
+  "${modID}:Rise": {
+    "NAME": "奋不顾身",
+    "DESCRIPTION": "失去所有敏捷 NL 造成失去敏捷数的 !M! 倍伤害",
+    "UPGRADE_DESCRIPTION": "失去所有敏捷 NL 造成失去敏捷数的 !M! 倍伤害"
+  },
+  "${modID}:Recall": {
+    "NAME": "回忆",
+    "DESCRIPTION": "选择 !M! 张已消耗的牌加入抽牌堆 NL 消耗",
+    "UPGRADE_DESCRIPTION": "选择 !M! 张已消耗的牌加入抽牌堆 NL 消耗"
+  },
+  "${modID}:Dispose": {
+    "NAME": "舍得",
+    "DESCRIPTION": "随机消耗1张牌 NL 获得等同其费用 + !M! 的敏捷 NL 抽1张牌",
+    "UPGRADE_DESCRIPTION": "选择并消耗一张牌 NL 获得等同其费用 + !M!的敏捷 NL 抽1张牌"
+  },
+  "${modID}:Flaw": {
+    "NAME": "有破绽！",
+    "DESCRIPTION": "造成 !D! 点伤害 NL 若敌人的意图是攻击，获得 !M! 点敏捷",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 NL 若敌人的意图是攻击，获得 !M! 点敏捷"
+  },
+  "${modID}:Wait": {
+    "NAME": "等一下！",
+    "DESCRIPTION": "失去 !M! 点敏捷 NL 获得 [E]",
+    "UPGRADE_DESCRIPTION": "失去 !M! 点敏捷 NL 获得 [E]"
+  },
+  "${modID}:OrdinaryForm": {
+    "NAME": "平凡形态",
+    "DESCRIPTION": "获得 !M! 点人工制品 NL 虚无",
+    "UPGRADE_DESCRIPTION": "获得 !M! 点人工制品 NL 虚无"
+  },
+  "${modID}:DummyAction": {
+    "NAME": "假动作",
+    "DESCRIPTION": "造成 !D! 点伤害 NL 获得 !M! 点敏捷 NL 回合结束时失去 !M! 点敏捷",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 NL 获得 !M! 点敏捷 NL 回合结束时失去 !M! 点敏捷"
+  },
+  "${modID}:TurnAroundStrike": {
+    "NAME": "旋身打击",
+    "DESCRIPTION": "失去1点敏捷 NL 造成 !D! 点伤害 NL 抽 !M! 张牌",
+    "UPGRADE_DESCRIPTION": "失去1点敏捷 NL 造成 !D! 点伤害 NL 抽 !M! 张牌"
+  },
+  "${modID}:Test": {
+    "NAME": "试探",
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次 NL 每次造成伤害时，若对方的意图为攻击，获得1点敏捷，否则添加1张“良机”到手牌",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 !M! 次 NL 每次造成伤害时，若对方的意图为攻击，获得1点敏捷，否则添加1张“良机”到手牌"
+  },
+  "${modID}:Reflect": {
+    "NAME": "反省",
+    "DESCRIPTION": "将“平凡形态”加入到消耗牌堆中 NL 添加一张“回忆”到抽牌堆中 NL 消耗",
+    "UPGRADE_DESCRIPTION": "将“平凡形态”加入到消耗牌堆中 NL 添加一张“回忆”到抽牌堆中 NL 消耗"
+  },
+  "${modID}:Withdraw": {
+    "NAME": "后撤步",
+    "DESCRIPTION": "获得 !B! 点格挡 !M! 次",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡 !M! 次"
+  },
+  "${modID}:HurryStrike": {
+    "NAME": "匆忙打击",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害 NL 随机消耗1张手牌 NL 伤害随机增减",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害 NL 随机消耗1张手牌 NL 伤害随机增减"
+  },
+  "${modID}:Prejudgement": {
+    "NAME": "预判",
+    "DESCRIPTION": "下回合获得 !M! 费、抽 !M! 张牌、 !B! 点格挡",
+    "UPGRADE_DESCRIPTION": "下回合获得 !M! 费、 NL 抽 !M! 张牌、 NL !B! 点格挡"
+  },
+  "${modID}:Armor": {
+    "NAME": "披挂",
+    "DESCRIPTION": "若敏捷点数非负，失去3点敏捷，获 !M! 层多层护甲",
+    "UPGRADE_DESCRIPTION": "若敏捷点数非负，失去3点敏捷，获 !M! 层多层护甲"
+  },
+  "${modID}:Trick": {
+    "NAME": "戏法",
+    "DESCRIPTION": "从弃牌堆抽取 !M! 张牌",
+    "UPGRADE_DESCRIPTION": "从弃牌堆抽取 !M! 张牌"
+  },
+  "${modID}:Plan": {
+    "NAME": "规划",
+    "DESCRIPTION": "抽 !M! 张牌，从手牌中选择1张牌放入抽牌堆顶",
+    "UPGRADE_DESCRIPTION": "抽 !M! 张牌，从手牌中选择1张牌放入抽牌堆顶"
+  },
+  "${modID}:Prelude": {
+    "NAME": "起手式",
+    "DESCRIPTION": "抽 !M! 张牌 NL 获得2点敏捷 NL 消耗",
+    "UPGRADE_DESCRIPTION": "抽 !M! 张牌 NL 获得2点敏捷 NL 固有，消耗"
+  },
+  "${modID}:Concentrate": {
+    "NAME": "专注",
+    "DESCRIPTION": "获得1层抽牌减少、 !M! 层力量、 !M! 层敏捷 NL 消耗",
+    "UPGRADE_DESCRIPTION": "获得1层抽牌减少、 !M! 层力量、 !M! 层敏捷 NL 消耗"
+  },
+  "${modID}:Tighten": {
+    "NAME": "收紧",
+    "DESCRIPTION": "将敌人的缠绕变为原先的 !M! 倍 NL 消耗",
+    "UPGRADE_DESCRIPTION": "将敌人的缠绕变为原先的 !M! 倍 NL 消耗"
+  },
+  "${modID}:Idea": {
+    "NAME": "点子",
+    "DESCRIPTION": "不可打出 NL 被消耗时，获得 [E] ，抽2张牌",
+    "UPGRADE_DESCRIPTION": "不可打出 NL 被消耗时，获得 [E] [E] ，抽2张牌",
+    "EXTENDED_DESCRIPTION": [
+      "这张牌不能被打出"
+    ]
+  },
+  "${modID}:Mist": {
+    "NAME": "迷雾",
+    "DESCRIPTION": "获得 !M! 层残影",
+    "UPGRADE_DESCRIPTION": "获得 !M! 层残影"
+  },
+  "${modID}:Doppelganger": {
+    "NAME": "双重存在",
+    "DESCRIPTION": "下回合获得 X [E] NL 抽 X 张牌",
+    "UPGRADE_DESCRIPTION": "下回合获得 X + !M!  [E] NL 抽 X + !M! 张牌"
+  },
+  "${modID}:PrudentStrike": {
+    "NAME": "谨慎打击",
+    "DESCRIPTION": "造成 !D! 点伤害，下回合开始时获得 !B! 点格挡",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，下回合开始时获得 !B! 点格挡"
+  },
+  "${modID}:SwiftStrike": {
+    "NAME": "快捷打击",
+    "DESCRIPTION": "造成 !D! 点伤害",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害"
+  },
+  "${modID}:Guerrilla": {
+    "NAME": "游击",
+    "DESCRIPTION": "若敌人的意图为攻击 NL 则获得 !B! 点格挡 !M! 次。否则造成 !D! 点伤害 !M! 次",
+    "UPGRADE_DESCRIPTION": "若敌人的意图不为攻击，则获得 !B! 点格挡 !M! 次。否则造成 !D! 点伤害 !M! 次"
+  },
+  "${modID}:PerfectStrike": {
+    "NAME": "完美打击",
+    "DESCRIPTION": "造成 !D! 点伤害，你每有一张名字中有打击的牌，伤害+ !M! ",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，你每有一张名字中有打击的牌，伤害+ !M! "
+  }
+}

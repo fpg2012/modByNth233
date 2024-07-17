@@ -1,0 +1,20 @@
+{
+  "${modID}:ExampleCard": {
+    "NAME": "Name",
+    "DESCRIPTION": "Description.",
+    "UPGRADE_DESCRIPTION": "This will automatically be used if the card is upgraded. Remove it if unneeded.",
+    "EXTENDED_DESCRIPTION": [
+      "You can put more text in here.",
+      "If you need to use it for stuff.",
+      "Blizzard is a good example for this."
+    ]
+  },
+  "${modID}:StrongStrike": {
+    "NAME": "Gift from Ironclad",
+    "DESCRIPTION": "Deal !D! Damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL Innate.",
+    "EXTENDED_DESCRIPTION": [
+      "Let me unleash my real potential!"
+    ]
+  }
+}
