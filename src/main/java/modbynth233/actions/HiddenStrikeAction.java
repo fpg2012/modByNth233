@@ -1,15 +1,8 @@
 package modbynth233.actions;
 
-//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by FernFlower decompiler)
-//
-
-
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -20,8 +13,8 @@ import com.megacrit.cardcrawl.vfx.WallopEffect;
 import com.megacrit.cardcrawl.vfx.combat.FlashAtkImgEffect;
 
 public class HiddenStrikeAction extends AbstractGameAction {
-    private DamageInfo info;
-    private int magicNumber;
+    private final DamageInfo info;
+    private final int magicNumber;
 
     public HiddenStrikeAction(AbstractCreature target, DamageInfo info, int magicNumber) {
         this.info = info;
