@@ -16,7 +16,7 @@ public class Rise extends BaseCard {
     private static final int UPG_DAMAGE = 0;
     private static final int BLOCK = 0;
     private static final int UPG_BLOCK = 0;
-    private static final int MAGIC_NUMBER = 3;
+    private static final int MAGIC_NUMBER = 5;
     private static final int UPG_MAGIC_NUMBER = 0;
     private static final int UPG_COST = 0;
 
@@ -43,8 +43,10 @@ public class Rise extends BaseCard {
                 break;
             }
         }
-        if (amount > 0) {
-            addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, -amount), -amount));
+        addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, -1), -1));
+
+        if (amount != 0) {
+            amount = Math.abs(amount);
             addToBot(new DamageAction(m, new DamageInfo(p, amount * this.magicNumber, DamageInfo.DamageType.NORMAL)));
         }
     }

@@ -23,7 +23,7 @@ public class OrdinaryForm extends BaseCard {
             CardType.POWER,
             CardRarity.RARE,
             CardTarget.SELF,
-            3
+            2
     );
 
     public OrdinaryForm() {

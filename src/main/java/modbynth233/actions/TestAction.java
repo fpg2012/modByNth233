@@ -21,31 +21,23 @@ public class TestAction extends AbstractGameAction {
     private int damage;
     AbstractMonster target;
     private AbstractCard cardToObtain;
-    private int tickCount = 0;
-    private int maxTick = 2;
+    private int chainCount = -1;
+    private int maxChain = 3;
     private DamageInfo info;
 
-    public TestAction(int damage, int maxTick, AbstractMonster target, AbstractCard cardToObtain) {
+    public TestAction(int damage, int maxChain, AbstractMonster target, AbstractCard cardToObtain) {
         this.actionType = ActionType.CARD_MANIPULATION;
         this.duration = Settings.ACTION_DUR_FAST;
         this.p = AbstractDungeon.player;
         this.cardToObtain = cardToObtain;
-        this.maxTick = maxTick;
+        this.maxChain = maxChain;
         this.target = target;
         this.damage = damage;
         this.info = new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL);
     }
 
     public void update() {
-        if (tickCount < maxTick) {
-            if (tickCount > 0) {
-                if (this.target.lastDamageTaken > 0) {
-                    this.gainDexterityAndChance();
-                }
-            }
-
-            this.tickDuration();
-
+        if (chainCount == -1 || chainCount < maxChain && this.target.lastDamageTaken <= 0) {
             AbstractDungeon.effectList.add(new FlashAtkImgEffect(this.target.hb.cX, this.target.hb.cY, AttackEffect.POISON, false));
             this.target.damage(this.info);
 
@@ -54,25 +46,19 @@ public class TestAction extends AbstractGameAction {
             } else {
                 this.addToTop(new WaitAction(0.1F));
             }
-
+            chainCount++;
             addToTop(new WaitAction(0.2F));
-
-            tickCount++;
             this.tickDuration();
         } else {
-            if (this.target.lastDamageTaken > 0) {
-                this.gainDexterityAndChance();
+            if (chainCount == 0) {
+                this.gainChance();
             }
             this.isDone = true;
         }
     }
 
-    private void gainDexterityAndChance() {
-        if (this.target.getIntentBaseDmg() >= 0) {
-            this.addToTop(new ApplyPowerAction(this.p, this.p, new DexterityPower(this.p, 1)));
-        } else {
-            this.addToTop(new MakeTempCardInHandAction(this.cardToObtain.makeStatEquivalentCopy(), 1));
-        }
+    private void gainChance() {
+        this.addToTop(new MakeTempCardInHandAction(this.cardToObtain.makeStatEquivalentCopy(), 1));
     }
 
     static {

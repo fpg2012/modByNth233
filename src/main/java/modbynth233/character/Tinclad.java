@@ -29,7 +29,7 @@ import static modbynth233.ModByNth233.makeID;
 public class Tinclad extends CustomPlayer {
     //Stats
     public static final int ENERGY_PER_TURN = 3;
-    public static final int MAX_HP = 50;
+    public static final int MAX_HP = 60;
     public static final int STARTING_GOLD = 99;
     public static final int CARD_DRAW = 5;
     public static final int ORB_SLOTS = 0;

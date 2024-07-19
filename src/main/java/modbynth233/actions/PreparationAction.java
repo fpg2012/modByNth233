@@ -12,15 +12,15 @@ public class PreparationAction extends AbstractGameAction {
     private boolean freeToPlayOnce = false;
     private AbstractPlayer p;
     private int energyOnUse = -1;
-    private int additional_amount = 0;
+    private int additionalAmount = 0;
 
-    public PreparationAction(AbstractPlayer p, boolean freeToPlayOnce, int energyOnUse, int additional_amount) {
+    public PreparationAction(AbstractPlayer p, boolean freeToPlayOnce, int energyOnUse, int additionalAmount) {
         this.p = p;
         this.freeToPlayOnce = freeToPlayOnce;
         this.duration = Settings.ACTION_DUR_XFAST;
         this.actionType = ActionType.SPECIAL;
         this.energyOnUse = energyOnUse;
-        this.additional_amount = additional_amount;
+        this.additionalAmount = additionalAmount;
     }
 
     public void update() {
@@ -36,7 +36,7 @@ public class PreparationAction extends AbstractGameAction {
 
         effect *= 2;
 
-        effect += additional_amount;
+        effect += additionalAmount;
 
         if (effect > 0) {
             this.addToBot(new ApplyPowerAction(this.p, this.p, new DexterityPower(p, effect)));

@@ -2,7 +2,9 @@ package modbynth233.cards;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.DiscardAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -13,7 +15,7 @@ import modbynth233.util.CardStats;
 
 public class TurnAroundStrike extends BaseCard {
     public static final String ID = makeID(TurnAroundStrike.class.getSimpleName());
-    private static final int DAMAGE = 12;
+    private static final int DAMAGE = 9;
     private static final int UPG_DAMAGE = 3;
     private static final int BLOCK = 0;
     private static final int UPG_BLOCK = 0;
@@ -40,9 +42,11 @@ public class TurnAroundStrike extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, -1), -1));
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL)));
+        addToBot(new WaitAction(0.1F));
         addToBot(new DrawCardAction(this.magicNumber));
+        addToBot(new WaitAction(0.1F));
+        addToBot(new DiscardAction(p, p, 1, false));
     }
 
     @Override

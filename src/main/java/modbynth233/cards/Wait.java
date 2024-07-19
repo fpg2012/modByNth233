@@ -2,6 +2,7 @@ package modbynth233.cards;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
+import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -15,7 +16,7 @@ public class Wait extends BaseCard {
     private static final int UPG_DAMAGE = 0;
     private static final int BLOCK = 0;
     private static final int UPG_BLOCK = 0;
-    private static final int MAGIC_NUMBER = 2;
+    private static final int MAGIC_NUMBER = 1;
     private static final int UPG_MAGIC_NUMBER = -1;
     private static final int UPG_COST = -1;
     
@@ -29,7 +30,7 @@ public class Wait extends BaseCard {
 
     public Wait() {
         super(ID, info);
-        setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
+        setMagic(MAGIC_NUMBER);
         // tags.add(CardTags.STRIKE);
         upgradeMagic = true;
     }
@@ -37,7 +38,8 @@ public class Wait extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, -this.magicNumber), -this.magicNumber));
-        addToBot(new GainEnergyAction(1));
+        addToBot(new WaitAction(0.1F));
+        addToBot(new GainEnergyAction(3));
     }
 
     @Override

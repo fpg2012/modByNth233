@@ -23,7 +23,7 @@ public class Chance extends BaseCard {
             CardType.SKILL,
             CardRarity.UNCOMMON,
             CardTarget.ENEMY,
-            1
+            0
     );
 
     public Chance() {

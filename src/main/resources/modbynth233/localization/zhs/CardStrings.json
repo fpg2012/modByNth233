@@ -29,13 +29,13 @@
   },
   "${modID}:Dodge": {
     "NAME": "侧身",
-    "DESCRIPTION": "获得 !B! 点格挡 !M! 次",
-    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡 !M! 次"
+    "DESCRIPTION": "获得 !B! 点格挡，对敌人施加 !M! 层虚弱",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡，对敌人施加 !M! 层虚弱"
   },
   "${modID}:HiddenStrike": {
     "NAME": "隐蔽打击",
-    "DESCRIPTION": "造成 !D! 点伤害 NL 若未造成伤害 NL 获得 !M! 点敏捷 NL 否则再造成 !D! 点伤害",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 NL 若未造成伤害 NL 获得 !M! 点敏捷 NL 否则再造成 !D! 点伤害"
+    "DESCRIPTION": "施加 !M! 点易伤，然后造成 !D! 点伤害",
+    "UPGRADE_DESCRIPTION": "施加 !M! 点易伤，然后造成 !D! 点伤害"
   },
   "${modID}:Thorn": {
     "NAME": "荆棘",
@@ -54,18 +54,18 @@
   },
   "${modID}:AttackAndBackwards": {
     "NAME": "且战且退",
-    "DESCRIPTION": "失去6点血量 NL 获得 !M! 点敏捷",
-    "UPGRADE_DESCRIPTION": "失去6点血量 NL 获得 !M! 点敏捷"
+    "DESCRIPTION": "失去5点血量 NL 获得 !M! 点敏捷",
+    "UPGRADE_DESCRIPTION": "失去5点血量 NL 获得 !M! 点敏捷"
   },
   "${modID}:Preparation": {
     "NAME": "预备动作",
-    "DESCRIPTION": "获得2X点敏捷 NL 消耗",
-    "UPGRADE_DESCRIPTION": "获得2X+1点敏捷 NL 消耗"
+    "DESCRIPTION": "获得 !M! X点敏捷 NL 消耗",
+    "UPGRADE_DESCRIPTION": "获得 !M! X点敏捷 NL 消耗"
   },
   "${modID}:ThornyShield": {
     "NAME": "荆棘盾",
-    "DESCRIPTION": "失去所有敏捷 NL 获得等量荆棘",
-    "UPGRADE_DESCRIPTION": "失去所有敏捷 NL 获得等量荆棘"
+    "DESCRIPTION": "获得敏捷数 !M! 倍的荆棘，失去1点敏捷 NL 消耗",
+    "UPGRADE_DESCRIPTION": "获得敏捷数 !M! 倍的荆棘，失去1点敏捷 NL 消耗"
   },
   "${modID}:Tumble": {
     "NAME": "翻滚",
@@ -79,23 +79,23 @@
   },
   "${modID}:Rope": {
     "NAME": "绳索",
-    "DESCRIPTION": "失去3点敏捷 NL 施加 !M! 点缠绕",
-    "UPGRADE_DESCRIPTION": "失去3点敏捷 NL 施加 !M! 点缠绕"
+    "DESCRIPTION": "造成 !D! 点伤害，施加 !M! 点缠绕",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，施加 !M! 点缠绕"
   },
   "${modID}:Net": {
     "NAME": "一网打尽",
-    "DESCRIPTION": "对所有敌人施加 !M! 点缠绕 NL 消耗",
-    "UPGRADE_DESCRIPTION": "对所有敌人施加 !M! 点缠绕"
+    "DESCRIPTION": "对所有敌人施加 !M! 点缠绕和 !M! 点虚弱 NL 消耗",
+    "UPGRADE_DESCRIPTION": "对所有敌人施加 !M! 点缠绕和 !M! 点虚弱 NL 消耗"
   },
   "${modID}:Refresh": {
     "NAME": "重整旗鼓",
-    "DESCRIPTION": "失去所有敏捷 NL 获得2倍格挡和1层残影，将负敏捷归零 NL 消耗",
-    "UPGRADE_DESCRIPTION": "失去所有敏捷 NL 获得失去敏捷数的3倍格挡和1层残影，将负敏捷归零"
+    "DESCRIPTION": "失去1点敏捷，获得1层残影 NL 将负敏捷归零",
+    "UPGRADE_DESCRIPTION": "失去1点敏捷，获得1层残影 NL 将负敏捷归零"
   },
   "${modID}:Rise": {
     "NAME": "奋不顾身",
-    "DESCRIPTION": "失去所有敏捷 NL 造成失去敏捷数的 !M! 倍伤害",
-    "UPGRADE_DESCRIPTION": "失去所有敏捷 NL 造成失去敏捷数的 !M! 倍伤害"
+    "DESCRIPTION": "造成敏捷数的 !M! 倍伤害，失去1点敏捷",
+    "UPGRADE_DESCRIPTION": "造成敏捷数的 !M! 倍伤害，失去1点敏捷"
   },
   "${modID}:Recall": {
     "NAME": "回忆",
@@ -114,8 +114,8 @@
   },
   "${modID}:Wait": {
     "NAME": "等一下！",
-    "DESCRIPTION": "失去 !M! 点敏捷 NL 获得 [E]",
-    "UPGRADE_DESCRIPTION": "失去 !M! 点敏捷 NL 获得 [E]"
+    "DESCRIPTION": "失去 !M! 点敏捷， 获得 [E] [E] [E] NL 消耗",
+    "UPGRADE_DESCRIPTION": "失去 !M! 点敏捷， 获得 [E] [E] [E] NL 消耗"
   },
   "${modID}:OrdinaryForm": {
     "NAME": "平凡形态",
@@ -129,13 +129,13 @@
   },
   "${modID}:TurnAroundStrike": {
     "NAME": "旋身打击",
-    "DESCRIPTION": "失去1点敏捷 NL 造成 !D! 点伤害 NL 抽 !M! 张牌",
-    "UPGRADE_DESCRIPTION": "失去1点敏捷 NL 造成 !D! 点伤害 NL 抽 !M! 张牌"
+    "DESCRIPTION": "造成 !D! 点伤害， 抽 !M! 张牌， 弃1张牌",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害， 抽 !M! 张牌， 弃1张牌"
   },
   "${modID}:Test": {
     "NAME": "试探",
-    "DESCRIPTION": "造成 !D! 点伤害 !M! 次 NL 每次造成伤害时，若对方的意图为攻击，获得1点敏捷，否则添加1张“良机”到手牌",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 !M! 次 NL 每次造成伤害时，若对方的意图为攻击，获得1点敏捷，否则添加1张“良机+”到手牌"
+    "DESCRIPTION": "造成 !D! 点伤害 NL 连锁3， 若未触发连锁，获得一张“良机”",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 NL 连锁3， 若未触发连锁，获得一张“良机+”"
   },
   "${modID}:Reflect": {
     "NAME": "反省",
@@ -159,8 +159,8 @@
   },
   "${modID}:Armor": {
     "NAME": "披挂",
-    "DESCRIPTION": "若敏捷点数非负，失去3点敏捷，获 !M! 层多层护甲",
-    "UPGRADE_DESCRIPTION": "若敏捷点数非负，失去3点敏捷，获 !M! 层多层护甲"
+    "DESCRIPTION": "若敏捷点数非负，失去1点敏捷，获 !M! 层多层护甲",
+    "UPGRADE_DESCRIPTION": "若敏捷点数非负，失去1点敏捷，获 !M! 层多层护甲"
   },
   "${modID}:Trick": {
     "NAME": "戏法",
@@ -212,8 +212,8 @@
   },
   "${modID}:SwiftStrike": {
     "NAME": "快捷打击",
-    "DESCRIPTION": "造成 !D! 点伤害",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害"
+    "DESCRIPTION": "造成 !B! 点伤害2次， 本牌攻击伤害受敏捷加成，不受力量加成",
+    "UPGRADE_DESCRIPTION": "造成 !B! 点伤害2次， 本牌攻击伤害受敏捷加成，不受力量加成"
   },
   "${modID}:Guerrilla": {
     "NAME": "游击",
@@ -224,5 +224,35 @@
     "NAME": "完美打击",
     "DESCRIPTION": "造成 !D! 点伤害，你每有一张名字中有打击的牌，伤害+ !M! ",
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，你每有一张名字中有打击的牌，伤害+ !M! "
+  },
+  "${modID}:CupOfCoffee": {
+    "NAME": "咖啡杯",
+    "DESCRIPTION": "获得 !M! 点敏捷",
+    "UPGRADE_DESCRIPTION": "获得 !M! 点敏捷"
+  },
+  "${modID}:Practice": {
+    "NAME": "修炼",
+    "DESCRIPTION": "在本回合将敏捷翻倍 NL 消耗",
+    "UPGRADE_DESCRIPTION": "将敏捷翻倍 NL 消耗"
+  },
+  "${modID}:SpiderString": {
+    "NAME": "蛛丝",
+    "DESCRIPTION": "施加 !M! 层缠绕",
+    "UPGRADE_DESCRIPTION": "施加 !M! 层缠绕"
+  },
+  "${modID}:Transfer": {
+    "NAME": "触类旁通",
+    "DESCRIPTION": "失去1点敏捷，获得 !M! 点力量 NL 消耗",
+    "UPGRADE_DESCRIPTION": "失去1点敏捷，获得 !M! 点力量 NL 消耗"
+  },
+  "${modID}:CupOfTea": {
+    "NAME": "茶杯",
+    "DESCRIPTION": "将荆棘翻倍 NL 消耗",
+    "UPGRADE_DESCRIPTION": "将荆棘翻倍"
+  },
+  "${modID}:Rest": {
+    "NAME": "休养生息",
+    "DESCRIPTION": "回复 !M! 倍敏捷数的生命值，失去半数敏捷 NL 消耗",
+    "UPGRADE_DESCRIPTION": "回复 !M! 倍敏捷数的生命值，失去半数敏捷 NL 消耗"
   }
 }

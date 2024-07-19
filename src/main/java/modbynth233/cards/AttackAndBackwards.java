@@ -21,12 +21,13 @@ public class AttackAndBackwards extends BaseCard{
 
     private static final int MAGIC_NUMBER = 3;
     private static final int UPG_MAGIC_NUMBER = 1;
-    private static final int LOSE_HP_AMOUNT = 6;
+    private static final int LOSE_HP_AMOUNT = 5;
 
     public AttackAndBackwards() {
         super(ID, info);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         upgradedMagicNumber = true;
+        setExhaust(true);
     }
 
     @Override
