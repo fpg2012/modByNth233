@@ -1,52 +1,50 @@
 package modbynth233.cards;
 
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.VulnerablePower;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
 
-public class Chance extends BaseCard {
-    public static final String ID = makeID(Chance.class.getSimpleName());
+public class BananaPeel extends BaseCard {
+    public static final String ID = makeID(BananaPeel.class.getSimpleName());
     private static final int DAMAGE = 0;
     private static final int UPG_DAMAGE = 0;
     private static final int BLOCK = 0;
     private static final int UPG_BLOCK = 0;
-    private static final int MAGIC_NUMBER = 0;
-    private static final int UPG_MAGIC_NUMBER = 0;
+    private static final int MAGIC_NUMBER = 10;
+    private static final int UPG_MAGIC_NUMBER = 10;
     private static final int UPG_COST = 1;
-    
+
     public static final CardStats info = new CardStats(
             Tinclad.Meta.CARD_COLOR,
             CardType.SKILL,
             CardRarity.UNCOMMON,
             CardTarget.ENEMY,
-            0
+            1
     );
 
-    public Chance() {
+    public BananaPeel() {
         super(ID, info);
-        setEthereal(true);
+        setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
+        upgradeMagic = true;
+        setExhaust(true);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (m == null) {
-            return;
-        }
-        if (m.getIntentBaseDmg() < 0) {
-            addToBot(new DrawCardAction(2));
-            if (this.upgraded) {
-                addToBot(new GainEnergyAction(1));
-            }
-        }
+        addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, this.magicNumber, false), this.magicNumber));
     }
 
     @Override
     public AbstractCard makeCopy() {
-        return new Chance();
+        return new BananaPeel();
     }
 
     @Override

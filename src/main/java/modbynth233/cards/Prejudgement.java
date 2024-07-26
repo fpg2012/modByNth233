@@ -32,8 +32,7 @@ public class Prejudgement extends BaseCard {
     public Prejudgement() {
         super(ID, info);
         setBlock(BLOCK, UPG_BLOCK);
-        setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
-        upgradeMagic = true;
+        setMagic(MAGIC_NUMBER);
     }
 
     @Override

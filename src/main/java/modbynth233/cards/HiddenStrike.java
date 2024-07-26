@@ -23,8 +23,8 @@ public class HiddenStrike extends BaseCard {
             2
     );
 
-    private static final int DAMAGE = 8;
-    private static final int UPG_DAMAGE = 2;
+    private static final int DAMAGE = 10;
+    private static final int UPG_DAMAGE = 4;
     private static final int MAGIC_NUMBER = 1;
     private static final int UPG_MAGIC_NUMBER = 1;
 
@@ -38,11 +38,11 @@ public class HiddenStrike extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-//        DamageInfo info = new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL);
-//        addToBot(new HiddenStrikeAction(m, info, this.magicNumber));
-        addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, this.magicNumber, false), this.magicNumber));
-        addToBot(new WaitAction(0.2F));
-        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        DamageInfo info = new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL);
+        addToBot(new HiddenStrikeAction(p, m, info, this.magicNumber));
+//        addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, this.magicNumber, false), this.magicNumber));
+//        addToBot(new WaitAction(0.2F));
+//        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
     }
 
     @Override

@@ -34,8 +34,8 @@
   },
   "${modID}:HiddenStrike": {
     "NAME": "隐蔽打击",
-    "DESCRIPTION": "施加 !M! 点易伤，然后造成 !D! 点伤害",
-    "UPGRADE_DESCRIPTION": "施加 !M! 点易伤，然后造成 !D! 点伤害"
+    "DESCRIPTION": "造成 !D! 点伤害，施加 !M! 点易伤",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，施加 !M! 点易伤"
   },
   "${modID}:Thorn": {
     "NAME": "荆棘",
@@ -175,7 +175,7 @@
   "${modID}:Prelude": {
     "NAME": "起手式",
     "DESCRIPTION": "抽 !M! 张牌 NL 获得2点敏捷 NL 消耗",
-    "UPGRADE_DESCRIPTION": "抽 !M! 张牌 NL 获得2点敏捷 NL 固有，消耗"
+    "UPGRADE_DESCRIPTION": "抽 !M! 张牌 NL 获得2点敏捷 NL 固有 、 消耗"
   },
   "${modID}:Concentrate": {
     "NAME": "专注",
@@ -254,5 +254,75 @@
     "NAME": "休养生息",
     "DESCRIPTION": "回复 !M! 倍敏捷数的生命值，失去半数敏捷 NL 消耗",
     "UPGRADE_DESCRIPTION": "回复 !M! 倍敏捷数的生命值，失去半数敏捷 NL 消耗"
+  },
+  "${modID}:Insult": {
+    "NAME": "辱骂",
+    "DESCRIPTION": "敌人增加 !M! 层力量， 击晕 NL 消耗",
+    "UPGRADE_DESCRIPTION": "敌人增加 !M! 层力量， 击晕 NL 消耗"
+  },
+  "${modID}:Choke": {
+    "NAME": "勒晕",
+    "DESCRIPTION": "若敌人已被缠绕，缠绕层数减少 !M! 分之1， 击晕",
+    "UPGRADE_DESCRIPTION": "若敌人已被缠绕，缠绕层数减少 !M! 分之1， 击晕"
+  },
+  "${modID}:Whip": {
+    "NAME": "鞭打",
+    "DESCRIPTION": "造成等同敌人缠绕层数的伤害， 减少 !M! 层缠绕",
+    "UPGRADE_DESCRIPTION": "造成等同敌人缠绕层数的伤害，减少 !M! 层缠绕"
+  },
+  "${modID}:BananaPeel": {
+    "NAME": "香蕉皮",
+    "DESCRIPTION": "施加 !M! 层易伤， 消耗",
+    "UPGRADE_DESCRIPTION": "施加 !M! 层易伤， 消耗"
+  },
+  "${modID}:InstinctDefend": {
+    "NAME": "本能防御",
+    "DESCRIPTION": "获得 !B! 点格挡",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡"
+  },
+  "${modID}:Bump": {
+    "NAME": "冲撞",
+    "DESCRIPTION": "造成 !D! 点伤害，然后造成等同荆棘层数的伤害",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，然后造成等同荆棘层数的伤害"
+  },
+  "${modID}:Elegy": {
+    "NAME": "悲歌",
+    "DESCRIPTION": "失去 !M! 点生命值，使敌人失去 !D! 点生命值",
+    "UPGRADE_DESCRIPTION": "失去 !M! 点生命值，使敌人失去 !D! 点生命值"
+  },
+  "${modID}:AttackAsDefense": {
+    "NAME": "化劲",
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次，获得等同造成伤害量的格挡",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 !M! 次，获得等同造成伤害量的格挡"
+  },
+  "${modID}:Innovation": {
+    "NAME": "创新",
+    "DESCRIPTION": "消耗 !M! 张牌，随机获得 !M! 张牌 NL 消耗",
+    "UPGRADE_DESCRIPTION": "消耗 !M! 张牌，随机获得 !M! 张牌"
+  },
+  "${modID}:Morale": {
+    "NAME": "士气",
+    "DESCRIPTION": "下一张攻击双倍伤害",
+    "UPGRADE_DESCRIPTION": "下一张攻击双倍伤害"
+  },
+  "${modID}:Charge": {
+    "NAME": "蓄力",
+    "DESCRIPTION": "接下来 !M! 张攻击牌免费",
+    "UPGRADE_DESCRIPTION": "接下来 !M! 张攻击牌免费"
+  },
+  "${modID}:Scry": {
+    "NAME": "占卜",
+    "DESCRIPTION": "你的回合开始时， 预见 !M!",
+    "UPGRADE_DESCRIPTION": "你的回合开始时， 预见 !M!"
+  },
+  "${modID}:Flashback": {
+    "NAME": "追忆",
+    "DESCRIPTION": "往消耗牌组中添加一张“往事”，添加一张“回忆”到抽牌堆中 NL 消耗",
+    "UPGRADE_DESCRIPTION": "往消耗牌组中添加一张“往事”，添加一张“回忆”到抽牌堆中 NL 消耗"
+  },
+  "${modID}:Nostalgia": {
+    "NAME": "往事",
+    "DESCRIPTION": "获得等于敏捷数的力量， 消耗 。 被回忆时，加入牌组，同时移除牌组中的所有“追忆”",
+    "UPGRADE_DESCRIPTION": "获得等于敏捷数的力量， 消耗 。 被移除出牌组时，获得“枯木树枝”、“偏光棱镜”和“燃烧之血”"
   }
 }

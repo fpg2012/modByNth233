@@ -9,6 +9,11 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.UIStrings;
+import com.megacrit.cardcrawl.vfx.cardManip.PurgeCardEffect;
+import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
+import modbynth233.cards.Flashback;
+import modbynth233.cards.Nostalgia;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -79,8 +84,25 @@ public class RecallAction extends AbstractGameAction {
             }
         } else {
             if (!AbstractDungeon.gridSelectScreen.selectedCards.isEmpty()) {
-                for(c = AbstractDungeon.gridSelectScreen.selectedCards.iterator(); c.hasNext(); derp.unhover()) {
+                for (c = AbstractDungeon.gridSelectScreen.selectedCards.iterator(); c.hasNext(); derp.unhover()) {
                     derp = (AbstractCard)c.next();
+                    if (derp.getClass() == Nostalgia.class) {
+                        derp.upgrade();
+                        AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(derp.makeStatEquivalentCopy(), (float)Settings.WIDTH / 2.0F, (float)Settings.HEIGHT / 2.0F));
+                        Iterator<AbstractCard> cardIter =  this.p.masterDeck.group.iterator();
+                        ArrayList<AbstractCard> toFind = new ArrayList<>();
+                        while (cardIter.hasNext()) {
+                            AbstractCard card = cardIter.next();
+                            if (card.getClass() == Flashback.class) {
+                                toFind.add(card);
+                            }
+                        }
+                        for (int i = 0; i < toFind.size(); ++i) {
+                            AbstractCard card = toFind.get(i);
+                            p.masterDeck.removeCard(card);
+                            AbstractDungeon.effectList.add(new PurgeCardEffect(card));
+                        }
+                    }
                     this.p.hand.addToHand(derp);
                     if (AbstractDungeon.player.hasPower("Corruption") && derp.type == CardType.SKILL) {
                         derp.setCostForTurn(-9);

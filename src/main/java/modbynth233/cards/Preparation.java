@@ -27,20 +27,14 @@ public class Preparation extends BaseCard {
 
     public Preparation() {
         super(ID, info);
-//        setDamage(DAMAGE, UPG_DAMAGE);
-//        setBlock(BLOCK, UPG_BLOCK);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
-//        setCostUpgrade(UPG_COST);
-//         tags.add(CardTags.STRIKE);
         upgradeMagic = true;
-//        upgradeBlock = true;
-//        upgradeDamage = true;
-        exhaust = true;
+        setExhaust(true);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new PreparationAction(p, this.freeToPlayOnce, this.energyOnUse * this.magicNumber, 0));
+        addToBot(new PreparationAction(p, this.freeToPlayOnce, this.energyOnUse, this.magicNumber, 0));
     }
 
     @Override
