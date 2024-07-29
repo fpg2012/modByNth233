@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
 
-public class Strike extends BaseCard {
+public class Strike extends MyBaseCard {
     public static final String ID = makeID(Strike.class.getSimpleName());
     public static final CardStats info = new CardStats(
             Tinclad.Meta.CARD_COLOR,

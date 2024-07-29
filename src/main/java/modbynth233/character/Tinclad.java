@@ -44,7 +44,7 @@ public class Tinclad extends CustomPlayer {
         //These are used to identify your character, as well as your character's card color.
         //Library color is basically the same as card color, but you need both because that's how the game was made.
         @SpireEnum
-        public static PlayerClass YOUR_CHARACTER;
+        public static PlayerClass TINCLAD;
         @SpireEnum(name = "CHARACTER_GRAY_COLOR") // These two MUST match. Change it to something unique for your character.
         public static AbstractCard.CardColor CARD_COLOR;
         @SpireEnum(name = "CHARACTER_GRAY_COLOR") @SuppressWarnings("unused")
@@ -91,7 +91,7 @@ public class Tinclad extends CustomPlayer {
     //Actual character class code below this point
 
     public Tinclad() {
-        super(getNames()[0], Meta.YOUR_CHARACTER,
+        super(getNames()[0], Meta.TINCLAD,
                 new CustomEnergyOrb(null, null, null), //Energy Orb
                 new SpriterAnimation(characterPath("animation/default.scml"))); //Animation
 

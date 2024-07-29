@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.powers.LoseDexterityPower;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
 
-public class DummyAction extends BaseCard {
+public class DummyAction extends MyBaseCard {
     public static final String ID = makeID(DummyAction.class.getSimpleName());
     private static final int DAMAGE = 7;
     private static final int BLOCK = 0;

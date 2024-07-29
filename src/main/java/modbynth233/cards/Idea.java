@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
 
-public class Idea extends BaseCard {
+public class Idea extends MyBaseCard {
     public static final String ID = makeID(Idea.class.getSimpleName());
     private static final int DAMAGE = 0;
     private static final int UPG_DAMAGE = 0;

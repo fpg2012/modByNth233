@@ -1,20 +1,10 @@
 {
-  "${modID}:ExampleCard": {
-    "NAME": "Name",
-    "DESCRIPTION": "Description.",
-    "UPGRADE_DESCRIPTION": "This will automatically be used if the card is upgraded. Remove it if unneeded.",
-    "EXTENDED_DESCRIPTION": [
-      "You can put more text in here.",
-      "If you need to use it for stuff.",
-      "Blizzard is a good example for this."
-    ]
-  },
-  "${modID}:StrongStrike": {
+  "${modID}:GiftFromIronclad": {
     "NAME": "战士的馈赠",
-    "DESCRIPTION": "造成 !D! 点伤害",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 NL 固有",
+    "DESCRIPTION": "造成 !D! 点伤害 NL 往牌组中添加 !M! 张晕眩",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 NL 往牌组中添加 !M! 张晕眩",
     "EXTENDED_DESCRIPTION": [
-      "让你见见我的真正实力！"
+      "力量？"
     ]
   },
   "${modID}:Strike": {
@@ -290,7 +280,7 @@
     "DESCRIPTION": "失去 !M! 点生命值，使敌人失去 !D! 点生命值",
     "UPGRADE_DESCRIPTION": "失去 !M! 点生命值，使敌人失去 !D! 点生命值"
   },
-  "${modID}:AttackAsDefense": {
+  "${modID}:AttackAsDefend": {
     "NAME": "化劲",
     "DESCRIPTION": "造成 !D! 点伤害 !M! 次，获得等同造成伤害量的格挡",
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 !M! 次，获得等同造成伤害量的格挡"

@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
 
-public class Lure extends BaseCard{
+public class Lure extends MyBaseCard {
     public static final String ID = makeID(Lure.class.getSimpleName());
     public static final CardStats info = new CardStats(
             Tinclad.Meta.CARD_COLOR,

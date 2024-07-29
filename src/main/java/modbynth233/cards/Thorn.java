@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.powers.ThornsPower;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
 
-public class Thorn extends BaseCard {
+public class Thorn extends MyBaseCard {
     public static final String ID = makeID(Thorn.class.getSimpleName());
     public static final CardStats info = new CardStats(
             Tinclad.Meta.CARD_COLOR,

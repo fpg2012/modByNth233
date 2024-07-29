@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.powers.DexterityPower;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
 
-public class AttackAndBackwards extends BaseCard{
+public class AttackAndBackwards extends MyBaseCard{
     public static final String ID = makeID(AttackAndBackwards.class.getSimpleName());
     public static final CardStats info = new CardStats(
             Tinclad.Meta.CARD_COLOR,

@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.powers.NextTurnBlockPower;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
 
-public class PrudentStrike extends BaseCard {
+public class PrudentStrike extends MyBaseCard {
     public static final String ID = makeID(PrudentStrike.class.getSimpleName());
     private static final int DAMAGE = 9;
     private static final int UPG_DAMAGE = 1;

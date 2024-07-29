@@ -15,7 +15,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
 
-public class Innovation extends BaseCard {
+public class Innovation extends MyBaseCard {
     public static final String ID = makeID(Innovation.class.getSimpleName());
     private static final int DAMAGE = 0;
     private static final int UPG_DAMAGE = 0;
@@ -46,18 +46,14 @@ public class Innovation extends BaseCard {
         addToBot(new ExhaustAction(1, false, false, false));
         addToBot(new WaitAction(0.1F));
 
-        int random = AbstractDungeon.cardRandomRng.random(10);
+        int random = AbstractDungeon.cardRandomRng.random(9);
         CardType type = CardType.ATTACK;
         if (random < 3) {
             type = CardType.ATTACK;
         } else if (random >= 3 && random < 6) {
             type = CardType.SKILL;
-        } else if (random >= 6 && random < 9) {
+        } else if (random >= 6) {
             type = CardType.POWER;
-        } else if (random == 9) {
-            type = CardType.STATUS;
-        } else if (random == 10) {
-            type = CardType.CURSE;
         }
 
         AbstractCard c = AbstractDungeon.returnTrulyRandomCardInCombat(type).makeCopy();

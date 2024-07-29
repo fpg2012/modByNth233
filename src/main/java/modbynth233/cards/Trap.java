@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.powers.SlowPower;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
 
-public class Trap extends BaseCard {
+public class Trap extends MyBaseCard {
     public static final String ID = makeID(Trap.class.getSimpleName());
     public static final CardStats info = new CardStats(
             Tinclad.Meta.CARD_COLOR,

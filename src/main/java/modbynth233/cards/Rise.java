@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.powers.DexterityPower;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
 
-public class Rise extends BaseCard {
+public class Rise extends MyBaseCard {
     public static final String ID = makeID(Rise.class.getSimpleName());
     private static final int DAMAGE = 0;
     private static final int UPG_DAMAGE = 0;

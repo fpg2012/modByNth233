@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.powers.WeakPower;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
 
-public class Dodge extends BaseCard {
+public class Dodge extends MyBaseCard {
     public static final String ID = makeID(Dodge.class.getSimpleName());
     public static final CardStats info = new CardStats(
             Tinclad.Meta.CARD_COLOR,

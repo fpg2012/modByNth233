@@ -17,5 +17,23 @@
       "[Leave]",
       "Select card to remove. (You can also stick extra text like this in here.)"
     ]
+  },
+  "${modID}:GiftFromIroncladEvent": {
+    "NAME": "倒下",
+    "DESCRIPTIONS": [
+      "你突然感到一阵强烈的晕眩",
+      "意识模糊之中： NL 陷入回忆？ NL 或者集中所有的理智，强行唤醒自己？",
+      "你陷入了回忆，仿佛找到一股神秘的力量。",
+      "你清醒过来了，发现手臂上多了一个伤口。"
+    ],
+    "OPTIONS": [
+      "[继续]",
+      "[回忆] #r获得 12张 ",
+      "。 #g获得 ",
+      "[理智] #r失去 ",
+      " #r点生命。 ",
+      " #r获得 ",
+      "[离开]"
+    ]
   }
 }

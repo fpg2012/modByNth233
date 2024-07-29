@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.powers.watcher.FreeAttackPower;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
 
-public class Charge extends BaseCard {
+public class Charge extends MyBaseCard {
     public static final String ID = makeID(Charge.class.getSimpleName());
     private static final int DAMAGE = 0;
     private static final int UPG_DAMAGE = 0;

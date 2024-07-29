@@ -1,5 +1,6 @@
 package modbynth233.cards;
 
+import com.evacipated.cardcrawl.mod.stslib.actions.common.StunMonsterAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -13,7 +14,7 @@ import com.megacrit.cardcrawl.powers.DexterityPower;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
 
-public class Choke extends BaseCard {
+public class Choke extends MyBaseCard {
     public static final String ID = makeID(Choke.class.getSimpleName());
     private static final int DAMAGE = 0;
     private static final int UPG_DAMAGE = 0;
@@ -41,14 +42,16 @@ public class Choke extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         int amount = 0;
         for (int i = 0; i < m.powers.size(); i++) {
-            if (p.powers.get(i).getClass().equals(ConstrictedPower.class)) {
-                amount = p.powers.get(i).amount;
+            if (m.powers.get(i).getClass().equals(ConstrictedPower.class)) {
+                amount = m.powers.get(i).amount;
                 break;
             }
         }
 
+        int fadeAmt = (int) -Math.ceil((double) amount/this.magicNumber);
         if (amount > 0) {
-            addToBot(new ApplyPowerAction(m, p, new ConstrictedPower(m, p, -amount/this.magicNumber), -amount/this.magicNumber));
+            addToBot(new ApplyPowerAction(m, p, new ConstrictedPower(m, p, fadeAmt), fadeAmt));
+            addToBot(new StunMonsterAction(m, p));
         }
     }
 

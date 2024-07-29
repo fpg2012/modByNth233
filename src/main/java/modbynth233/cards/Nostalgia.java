@@ -18,7 +18,7 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
 
-public class Nostalgia extends BaseCard {
+public class Nostalgia extends MyBaseCard {
     public static final String ID = makeID(Nostalgia.class.getSimpleName());
     private static final int DAMAGE = 0;
     private static final int UPG_DAMAGE = 0;

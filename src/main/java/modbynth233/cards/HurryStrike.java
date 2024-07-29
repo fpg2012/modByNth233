@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
 
-public class HurryStrike extends BaseCard {
+public class HurryStrike extends MyBaseCard {
     public static final String ID = makeID(HurryStrike.class.getSimpleName());
     private static final int DAMAGE = 10;
     private static final int UPG_DAMAGE = 2;

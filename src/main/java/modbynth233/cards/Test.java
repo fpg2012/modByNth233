@@ -7,7 +7,7 @@ import modbynth233.actions.TestAction;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
 
-public class Test extends BaseCard {
+public class Test extends MyBaseCard {
     public static final String ID = makeID(Test.class.getSimpleName());
     private static final int DAMAGE = 3;
     private static final int UPG_DAMAGE = 0;

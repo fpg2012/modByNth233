@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.powers.DexterityPower;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
 
-public class CupOfCoffee extends BaseCard {
+public class CupOfCoffee extends MyBaseCard {
     public static final String ID = makeID(CupOfCoffee.class.getSimpleName());
     private static final int DAMAGE = 0;
     private static final int UPG_DAMAGE = 0;

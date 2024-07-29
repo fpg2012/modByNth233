@@ -15,7 +15,7 @@ import com.megacrit.cardcrawl.powers.ThornsPower;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
 
-public class CupOfTea extends BaseCard {
+public class CupOfTea extends MyBaseCard {
     public static final String ID = makeID(CupOfTea.class.getSimpleName());
     private static final int DAMAGE = 0;
     private static final int UPG_DAMAGE = 0;

@@ -2,21 +2,16 @@ package modbynth233;
 
 import basemod.AutoAdd;
 import basemod.BaseMod;
-import basemod.abstracts.CustomPlayer;
-import basemod.devcommands.deck.Deck;
-import basemod.devcommands.deck.DeckAdd;
+import basemod.eventUtil.AddEventParams;
+import basemod.eventUtil.EventUtils;
 import basemod.interfaces.*;
-import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.characters.Ironclad;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.CardLibrary;
+import com.megacrit.cardcrawl.dungeons.Exordium;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.unlock.UnlockTracker;
-import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 import modbynth233.cards.BaseCard;
 import modbynth233.character.Tinclad;
+import modbynth233.event.GiftFromIroncladEvent;
 import modbynth233.util.GeneralUtils;
 import modbynth233.util.KeywordInfo;
 import modbynth233.util.TextureLoader;
@@ -54,6 +49,8 @@ public class ModByNth233 implements
     static { loadModInfo(); }
     private static final String resourcesFolder = checkResourcesPath();
     public static final Logger logger = LogManager.getLogger(modID); //Used to output to the console.
+    public static TextureAtlas cardAtlas = null;
+    public static Texture cardTexture;
 
     //This is used to prefix the IDs of various objects like cards and relics,
     //to avoid conflicts between different mods using the same name for things.
@@ -65,7 +62,6 @@ public class ModByNth233 implements
     public static void initialize() {
         new ModByNth233();
         Tinclad.Meta.registerColor();
-
     }
 
     public ModByNth233() {
@@ -83,6 +79,7 @@ public class ModByNth233 implements
         //If you want to set up a config panel, that will be done here.
         //The Mod Badges page has a basic example of this, but setting up config is overall a bit complex.
         BaseMod.registerModBadge(badgeTexture, info.Name, GeneralUtils.arrToString(info.Authors), info.Description, null);
+        BaseMod.addEvent(new AddEventParams.Builder(GiftFromIroncladEvent.ID, GiftFromIroncladEvent.class).dungeonID(Exordium.ID).playerClass(Tinclad.Meta.TINCLAD).create());
     }
 
     /*----------Localization----------*/
@@ -232,11 +229,12 @@ public class ModByNth233 implements
 
     @Override
     public void receiveEditCards() {
+        cardAtlas = new TextureAtlas(Gdx.files.internal("cards/cards.atlas"));
+        cardTexture = new Texture(Gdx.files.internal("modbynth233/images/cards/card_texture.png"));
         new AutoAdd(modID)
                 .packageFilter(BaseCard.class)
                 .setDefaultSeen(true)
                 .cards();
-
     }
 
     @Override

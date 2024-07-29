@@ -13,7 +13,7 @@ import modbynth233.actions.HiddenStrikeAction;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
 
-public class HiddenStrike extends BaseCard {
+public class HiddenStrike extends MyBaseCard {
     public static final String ID = makeID(HiddenStrike.class.getSimpleName());
     public static final CardStats info = new CardStats(
             Tinclad.Meta.CARD_COLOR,

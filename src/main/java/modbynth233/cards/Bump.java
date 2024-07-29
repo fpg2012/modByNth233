@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.powers.ThornsPower;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
 
-public class Bump extends BaseCard {
+public class Bump extends MyBaseCard {
     public static final String ID = makeID(Bump.class.getSimpleName());
     private static final int DAMAGE = 6;
     private static final int UPG_DAMAGE = 0;

@@ -7,7 +7,7 @@ import modbynth233.actions.PreparationAction;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
 
-public class Preparation extends BaseCard {
+public class Preparation extends MyBaseCard {
     public static final String ID = makeID(Preparation.class.getSimpleName());
 //    private static final int DAMAGE = 0;
 //    private static final int UPG_DAMAGE = 0;
