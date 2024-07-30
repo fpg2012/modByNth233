@@ -3,6 +3,7 @@ package modbynth233.character;
 import basemod.BaseMod;
 import basemod.abstracts.CustomEnergyOrb;
 import basemod.abstracts.CustomPlayer;
+import basemod.animations.SpineAnimation;
 import basemod.animations.SpriterAnimation;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
@@ -91,9 +92,12 @@ public class Tinclad extends CustomPlayer {
     //Actual character class code below this point
 
     public Tinclad() {
+//        super(getNames()[0], Meta.TINCLAD,
+//                new CustomEnergyOrb(null, null, null), //Energy Orb
+//                new SpriterAnimation(characterPath("animation/default.scml"))); //Animation
         super(getNames()[0], Meta.TINCLAD,
                 new CustomEnergyOrb(null, null, null), //Energy Orb
-                new SpriterAnimation(characterPath("animation/default.scml"))); //Animation
+                new SpineAnimation(characterPath("animation/skeleton.atlas"), characterPath("animation/skeleton.json"), 1.0F)); //Animation
 
         initializeClass(null,
                 SHOULDER_2,

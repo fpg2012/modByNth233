@@ -190,8 +190,8 @@
     "DESCRIPTION": "获得 !M! 层残影",
     "UPGRADE_DESCRIPTION": "获得 !M! 层残影"
   },
-  "${modID}:Doppelganger": {
-    "NAME": "双重存在",
+  "${modID}:DoppelgangerTinclad": {
+    "NAME": "多重存在",
     "DESCRIPTION": "下回合获得 X [E] NL 抽 X 张牌 NL 消耗",
     "UPGRADE_DESCRIPTION": "下回合获得 X + !M! [E] NL 抽 X + !M! 张牌 NL 消耗"
   },
