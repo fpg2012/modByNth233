@@ -50,9 +50,9 @@ public class Innovation extends MyBaseCard {
         CardType type = CardType.ATTACK;
         if (random < 3) {
             type = CardType.ATTACK;
-        } else if (random >= 3 && random < 6) {
+        } else if (random < 6) {
             type = CardType.SKILL;
-        } else if (random >= 6) {
+        } else {
             type = CardType.POWER;
         }
 

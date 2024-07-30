@@ -48,5 +48,6 @@ public class Reflect extends MyBaseCard {
     @Override
     public void upgrade() {
         super.upgrade();
+        this.cardToObtain.upgrade();
     }
 }

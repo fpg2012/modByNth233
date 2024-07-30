@@ -14,9 +14,9 @@ public class OrdinaryForm extends MyBaseCard {
     private static final int UPG_DAMAGE = 0;
     private static final int BLOCK = 0;
     private static final int UPG_BLOCK = 0;
-    private static final int MAGIC_NUMBER = 2;
-    private static final int UPG_MAGIC_NUMBER = 1;
-    private static final int UPG_COST = 1;
+    private static final int MAGIC_NUMBER = 49;
+    private static final int UPG_MAGIC_NUMBER = 2;
+    private static final int UPG_COST = 2;
     
     public static final CardStats info = new CardStats(
             Tinclad.Meta.CARD_COLOR,
@@ -28,9 +28,8 @@ public class OrdinaryForm extends MyBaseCard {
 
     public OrdinaryForm() {
         super(ID, info);
-        setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
+        setMagic(MAGIC_NUMBER);
         setEthereal(true);
-        upgradeMagic = true;
     }
 
     @Override
@@ -46,5 +45,6 @@ public class OrdinaryForm extends MyBaseCard {
     @Override
     public void upgrade() {
         super.upgrade();
+        setEthereal(false);
     }
 }

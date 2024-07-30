@@ -30,9 +30,9 @@ public class Wait extends MyBaseCard {
 
     public Wait() {
         super(ID, info);
-        setMagic(MAGIC_NUMBER);
-        // tags.add(CardTags.STRIKE);
+        setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         upgradeMagic = true;
+        setExhaust(true);
     }
 
     @Override

@@ -55,13 +55,16 @@ public class GiftFromIroncladEvent extends AbstractImageEvent {
                         this.imageEventText.updateBodyText(DESCRIPTIONS[2]);
                         for (int i = 0; i < 12; ++i) {
                             AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(dazed.makeStatEquivalentCopy(), (float)Settings.WIDTH / 2.0F, (float)Settings.HEIGHT / 2.0F));
+                            logMetricObtainCard(NAME, "Recall", dazed);
                         }
                         AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(gift.makeStatEquivalentCopy(), (float)Settings.WIDTH / 3.0F * 2.0F, (float)Settings.HEIGHT / 3.0F));
+                        logMetricObtainCard(NAME, "Recall", gift);
                         break;
                     case 1:
                         this.imageEventText.updateBodyText(DESCRIPTIONS[3]);
                         AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(wound.makeStatEquivalentCopy(), (float)Settings.WIDTH / 2.0F, (float)Settings.HEIGHT / 2.0F));
-                        AbstractDungeon.player.damage(new DamageInfo(AbstractDungeon.player, 8, DamageInfo.DamageType.HP_LOSS));
+                        AbstractDungeon.player.damage(new DamageInfo(AbstractDungeon.player, 3, DamageInfo.DamageType.HP_LOSS));
+                        logMetricObtainCardAndDamage(NAME, "Wake up", wound, 3);
                         break;
                     default:
                         return;

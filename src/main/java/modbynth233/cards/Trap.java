@@ -15,18 +15,18 @@ public class Trap extends MyBaseCard {
             CardType.SKILL,
             CardRarity.RARE,
             CardTarget.ENEMY,
-            3
+            2
     );
 
     public Trap() {
         super(ID, info);
-        setCostUpgrade(2);
-        this.exhaust = true;
+        setCostUpgrade(1);
+        setExhaust(true);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(m, p, new SlowPower(m, 1)));
+        addToBot(new ApplyPowerAction(m, p, new SlowPower(m, 1), 1));
     }
 
     @Override

@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.TalkAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.status.Dazed;
@@ -30,7 +31,7 @@ public class GiftFromIronclad extends MyBaseCard {
 
     private static final int DAMAGE = 200;
     private static final int UPG_DAMAGE = 20;
-    private static final int MAGIC_NUMBER = 3;
+    private static final int MAGIC_NUMBER = 2;
     private static final int MAGIC_NUMBER_UPG = -1;
     private static final AbstractCard cardToObtain = new Dazed();
 
@@ -54,7 +55,7 @@ public class GiftFromIronclad extends MyBaseCard {
         }
         addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         addToBot(new TalkAction(true, cardStrings.EXTENDED_DESCRIPTION[0], 2, 2));
-        addToBot(new VFXAction(new StunStarEffect(portrait.offsetX, portrait.offsetY), 2.0F));
+        addToBot(new MakeTempCardInDrawPileAction(new Dazed(), this.magicNumber, true, true));
     }
 
     @Override

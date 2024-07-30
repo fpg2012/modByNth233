@@ -1,5 +1,6 @@
 package modbynth233.actions;
 
+import basemod.devcommands.deck.DeckAdd;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
@@ -69,16 +70,6 @@ public class RecallAction extends AbstractGameAction {
                     derp.unfadeOut();
                 }
 
-                c = this.p.exhaustPile.group.iterator();
-
-//                while(c.hasNext()) {
-//                    derp = (AbstractCard)c.next();
-//                    if (derp.cardID.equals("Exhume")) {
-//                        c.remove();
-//                        this.exhumes.add(derp);
-//                    }
-//                }
-
                 AbstractDungeon.gridSelectScreen.open(this.p.exhaustPile, this.numCards, TEXT[0], false);
                 this.tickDuration();
             }
@@ -86,9 +77,10 @@ public class RecallAction extends AbstractGameAction {
             if (!AbstractDungeon.gridSelectScreen.selectedCards.isEmpty()) {
                 for (c = AbstractDungeon.gridSelectScreen.selectedCards.iterator(); c.hasNext(); derp.unhover()) {
                     derp = (AbstractCard)c.next();
-                    if (derp.getClass() == Nostalgia.class) {
+                    if (derp.getClass() == Nostalgia.class && !derp.upgraded) {
                         derp.upgrade();
                         AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(derp.makeStatEquivalentCopy(), (float)Settings.WIDTH / 2.0F, (float)Settings.HEIGHT / 2.0F));
+                        
                         Iterator<AbstractCard> cardIter =  this.p.masterDeck.group.iterator();
                         ArrayList<AbstractCard> toFind = new ArrayList<>();
                         while (cardIter.hasNext()) {

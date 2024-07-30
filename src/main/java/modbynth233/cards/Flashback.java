@@ -24,6 +24,7 @@ public class Flashback extends MyBaseCard {
     private static final int UPG_MAGIC_NUMBER = 0;
     private static final int UPG_COST = 1;
     private final AbstractCard cardToObtain = new Nostalgia();
+    private AbstractCard recall = new Recall();
 
     public static final CardStats info = new CardStats(
             Tinclad.Meta.CARD_COLOR,
@@ -36,13 +37,14 @@ public class Flashback extends MyBaseCard {
     public Flashback() {
         super(ID, info);
         setExhaust(true);
+        this.cardsToPreview = cardToObtain;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new AddToExhaustAction(new Nostalgia()));
         addToBot(new WaitAction(0.2F));
-        addToBot(new MakeTempCardInDrawPileAction(new Recall(), 1, true, true));
+        addToBot(new MakeTempCardInDrawPileAction(this.recall.makeStatEquivalentCopy(), 1, true, true));
     }
 
     @Override
@@ -53,5 +55,6 @@ public class Flashback extends MyBaseCard {
     @Override
     public void upgrade() {
         super.upgrade();
+        this.recall.upgrade();
     }
 }

@@ -59,8 +59,12 @@ public class Nostalgia extends MyBaseCard {
     @Override
     public void onRemoveFromMasterDeck() {
         AbstractDungeon.getCurrRoom().spawnRelicAndObtain((float)(Settings.WIDTH / 2), (float)(Settings.HEIGHT / 2), RelicLibrary.getRelic("Dead Branch").makeCopy());
-        AbstractDungeon.getCurrRoom().spawnRelicAndObtain((float)(Settings.WIDTH / 2), (float)(Settings.HEIGHT / 2), RelicLibrary.getRelic("Prismatic Shard").makeCopy());
-        AbstractDungeon.getCurrRoom().spawnRelicAndObtain((float)(Settings.WIDTH / 2), (float)(Settings.HEIGHT / 2), RelicLibrary.getRelic("Burning Blood").makeCopy());
+        if (!AbstractDungeon.player.hasRelic("PrismaticShard")) {
+            AbstractDungeon.getCurrRoom().spawnRelicAndObtain((float)(Settings.WIDTH / 2), (float)(Settings.HEIGHT / 2), RelicLibrary.getRelic("PrismaticShard").makeCopy());
+        }
+        if (!AbstractDungeon.player.hasRelic("Burning Blood")) {
+            AbstractDungeon.getCurrRoom().spawnRelicAndObtain((float)(Settings.WIDTH / 2), (float)(Settings.HEIGHT / 2), RelicLibrary.getRelic("Burning Blood").makeCopy());
+        }
         super.onRemoveFromMasterDeck();
     }
 

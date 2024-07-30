@@ -21,7 +21,7 @@ public class ThornyShield extends MyBaseCard {
     
     public static final CardStats info = new CardStats(
             Tinclad.Meta.CARD_COLOR,
-            CardType.SKILL,
+            CardType.POWER,
             CardRarity.UNCOMMON,
             CardTarget.SELF,
             2
@@ -29,13 +29,9 @@ public class ThornyShield extends MyBaseCard {
 
     public ThornyShield() {
         super(ID, info);
-//        setDamage(DAMAGE, UPG_DAMAGE);
-//        setBlock(BLOCK, UPG_BLOCK);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         setCostUpgrade(UPG_COST);
-//        tags.add(CardTags.STRIKE);
         upgradeMagic = true;
-        setExhaust(true);
     }
 
     @Override
