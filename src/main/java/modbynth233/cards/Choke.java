@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -23,6 +24,7 @@ public class Choke extends MyBaseCard {
     private static final int MAGIC_NUMBER = 2;
     private static final int UPG_MAGIC_NUMBER = 1;
     private static final int UPG_COST = 1;
+    private AbstractCard cardToObtain = null;
 
     public static final CardStats info = new CardStats(
             Tinclad.Meta.CARD_COLOR,
@@ -34,8 +36,7 @@ public class Choke extends MyBaseCard {
 
     public Choke() {
         super(ID, info);
-        setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
-        upgradeMagic = true;
+        setExhaust(true);
     }
 
     @Override
@@ -50,8 +51,11 @@ public class Choke extends MyBaseCard {
 
         int fadeAmt = (int) -Math.ceil((double) amount/this.magicNumber);
         if (amount > 0) {
-            addToBot(new ApplyPowerAction(m, p, new ConstrictedPower(m, p, fadeAmt), fadeAmt));
             addToBot(new StunMonsterAction(m, p));
+        }
+
+        if (upgraded) {
+            addToBot(new MakeTempCardInDrawPileAction(cardToObtain, 1, true, true));
         }
     }
 
@@ -63,5 +67,7 @@ public class Choke extends MyBaseCard {
     @Override
     public void upgrade() {
         super.upgrade();
+        this.cardToObtain = new Choke();
+        this.cardsToPreview = cardToObtain;
     }
 }

@@ -54,7 +54,7 @@
   },
   "${modID}:ThornyShield": {
     "NAME": "荆棘盾",
-    "DESCRIPTION": "获得敏捷数 !M! 倍的荆棘，失去1点敏捷 NL 消耗",
+    "DESCRIPTION": "获得等同敏捷数的荆棘，失去1点敏捷 NL 消耗",
     "UPGRADE_DESCRIPTION": "获得敏捷数 !M! 倍的荆棘，失去1点敏捷 NL 消耗"
   },
   "${modID}:Tumble": {
@@ -105,7 +105,7 @@
   "${modID}:Wait": {
     "NAME": "等一下！",
     "DESCRIPTION": "失去 !M! 点敏捷， 获得 [E] [E] [E] NL 消耗",
-    "UPGRADE_DESCRIPTION": "失去 !M! 点敏捷， 获得 [E] [E] [E] NL 消耗"
+    "UPGRADE_DESCRIPTION": "获得 [E] [E] [E] NL 消耗"
   },
   "${modID}:OrdinaryForm": {
     "NAME": "平凡形态",
@@ -223,7 +223,7 @@
   "${modID}:Practice": {
     "NAME": "修炼",
     "DESCRIPTION": "在本回合将敏捷翻倍 NL 消耗",
-    "UPGRADE_DESCRIPTION": "将敏捷翻倍 NL 消耗"
+    "UPGRADE_DESCRIPTION": "在本回合将敏捷翻倍"
   },
   "${modID}:SpiderString": {
     "NAME": "蛛丝",
@@ -252,13 +252,13 @@
   },
   "${modID}:Choke": {
     "NAME": "勒晕",
-    "DESCRIPTION": "若敌人已被缠绕，缠绕层数减少 !M! 分之1， 击晕",
-    "UPGRADE_DESCRIPTION": "若敌人已被缠绕，缠绕层数减少 !M! 分之1， 击晕"
+    "DESCRIPTION": "若敌人已被缠绕， 击晕 NL 消耗",
+    "UPGRADE_DESCRIPTION": "若敌人已被缠绕， 击晕 ，往抽牌堆中添加一张勒晕 NL 消耗"
   },
   "${modID}:Whip": {
     "NAME": "鞭打",
     "DESCRIPTION": "造成等同敌人缠绕层数的伤害， 减少 !M! 层缠绕",
-    "UPGRADE_DESCRIPTION": "造成等同敌人缠绕层数的伤害，减少 !M! 层缠绕"
+    "UPGRADE_DESCRIPTION": "使敌人生命值减少等同缠绕层数的数值， 减少 !M! 层缠绕"
   },
   "${modID}:BananaPeel": {
     "NAME": "香蕉皮",

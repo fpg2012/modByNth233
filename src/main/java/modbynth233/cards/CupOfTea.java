@@ -28,7 +28,7 @@ public class CupOfTea extends MyBaseCard {
     public static final CardStats info = new CardStats(
             Tinclad.Meta.CARD_COLOR,
             CardType.SKILL,
-            CardRarity.UNCOMMON,
+            CardRarity.RARE,
             CardTarget.SELF,
             1
     );

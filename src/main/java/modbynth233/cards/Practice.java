@@ -49,9 +49,7 @@ public class Practice extends MyBaseCard {
         if (amount != 0) {
             addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, amount), amount));
             addToBot(new WaitAction(0.1F));
-            if (!upgraded) {
-                addToBot(new ApplyPowerAction(p, p, new LoseDexterityPower(p, amount), amount));
-            }
+            addToBot(new ApplyPowerAction(p, p, new LoseDexterityPower(p, amount), amount));
         }
     }
 
@@ -63,5 +61,6 @@ public class Practice extends MyBaseCard {
     @Override
     public void upgrade() {
         super.upgrade();
+        setExhaust(false);
     }
 }

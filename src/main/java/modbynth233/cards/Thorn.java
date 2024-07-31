@@ -18,7 +18,7 @@ public class Thorn extends MyBaseCard {
             1
     );
 
-    private static final int MAGIC_NUMBER = 7;
+    private static final int MAGIC_NUMBER = 6;
     private static final int UPG_MAGIC_NUMBER = 1;
 
     public Thorn() {
