@@ -1,23 +1,68 @@
 [
   {
-    "PROPER_NAME": "This is displayed in the tooltip.",
+    "ID": "Constricted",
+    "PROPER_NAME": "缠绕",
     "NAMES": [
-      "these",
-      "are",
-      "detected",
-      "in",
-      "the",
-      "text"
+      "缠绕"
     ],
-    "DESCRIPTION": "This is displayed in the tooltip. Spaces should not be used be avoided in NAMES, with the exception of multi-word keywords (see next entry)."
+    "DESCRIPTION": "在回合结束时造成伤害"
   },
   {
-    "PROPER_NAME": "Multiword Keyword",
+    "ID": "Chained",
+    "PROPER_NAME": "连锁",
     "NAMES": [
-      "multiword keyword",
-      "multiword_keyword",
-      "multiword_keywords"
+      "连锁"
     ],
-    "DESCRIPTION": "Make sure the first element in NAMES has no underscores. The rest should use _ in the place of spaces. In card text, you'll use the underscore versions."
+    "DESCRIPTION": "若攻击伤害未造成生命值减少，则再造成一次攻击伤害。连锁n表示至多触发n次。"
+  },
+  {
+    "ID": "Blur",
+    "PROPER_NAME": "残影",
+    "NAMES": [
+      "残影"
+    ],
+    "DESCRIPTION": "回合结束时不失去 格挡 。每回合结束时，自动减少一层。"
+  },
+  {
+    "ID": "PlatedArmor",
+    "PROPER_NAME": "多层护甲",
+    "NAMES": [
+      "多层护甲"
+    ],
+    "DESCRIPTION": "在你的回合结束时获得 X 点 格挡 。受到攻击伤害而失去生命时， 多层护甲 的层数将会减少 1 。"
+  },
+  {
+    "ID": "Chance",
+    "PROPER_NAME": "良机",
+    "NAMES": [
+      "良机",
+      "良机+"
+    ],
+    "DESCRIPTION": "名为良机的牌"
+  },
+  {
+    "ID": "Slow",
+    "PROPER_NAME": "缓慢",
+    "NAMES": [
+      "缓慢"
+    ],
+    "DESCRIPTION": " 你在这个回合每打出一张卡牌，，该敌人本回合受到的伤害增加 10% 。"
+  },
+  {
+    "ID": "Buffer",
+    "PROPER_NAME": "缓冲",
+    "NAMES": [
+      "缓冲"
+    ],
+    "DESCRIPTION": " 防止生命值减少 "
+  },
+  {
+    "ID": "SwiftBlock",
+    "PROPER_NAME": "迅捷格挡",
+    "NAMES": [
+      "迅捷格挡",
+      "迅捷格挡+"
+    ],
+    "DESCRIPTION": " 获得格挡， 消耗 "
   }
 ]

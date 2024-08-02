@@ -4,5 +4,13 @@
     "DESCRIPTIONS": [
       "You are Very Cool and Strong."
     ]
+  },
+  "${modID}:RaiseShieldPower": {
+    "NAME": "举盾",
+    "DESCRIPTIONS": [
+      "回合开始时获得 #b",
+      " 张 #y迅捷格挡",
+      " 张 #y迅捷格挡"
+    ]
   }
 }
