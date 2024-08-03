@@ -21,7 +21,7 @@
     "NAMES": [
       "残影"
     ],
-    "DESCRIPTION": "回合结束时不失去 格挡 。每回合结束时，自动减少一层。"
+    "DESCRIPTION": "回合结束时不失去 #y格挡 。每回合结束时，自动减少一层。"
   },
   {
     "ID": "PlatedArmor",
@@ -63,6 +63,45 @@
       "迅捷格挡",
       "迅捷格挡+"
     ],
-    "DESCRIPTION": " 获得格挡， 消耗 "
+    "DESCRIPTION": " 获得 #y格挡， #y消耗 "
+  },
+  {
+    "ID": "TempCard",
+    "PROPER_NAME": "临时获得",
+    "NAMES": [
+      "迅捷格挡",
+      "迅捷格挡+",
+      "良机",
+      "良机+"
+    ],
+    "DESCRIPTION": "临时获得的卡牌只能在本次战斗中使用，不会加入到牌组中"
+  },
+  {
+    "ID": "Recall",
+    "PROPER_NAME": "回忆",
+    "NAMES": [
+      "回忆",
+      "回忆+"
+    ],
+    "DESCRIPTION": " 把消耗牌堆中的牌移回手牌 "
+  },
+  {
+    "ID": "SpecialRelic",
+    "PROPER_NAME": "获得遗物",
+    "NAMES": [
+      "枯木树枝",
+      "偏光棱镜",
+      "燃烧之血"
+    ],
+    "DESCRIPTION": " 你回忆起了什么？ "
+  },
+  {
+    "ID": "Flashback",
+    "PROPER_NAME": "追忆",
+    "NAMES": [
+      "追忆",
+      "追忆+"
+    ],
+    "DESCRIPTION": "往消耗牌组中添加一张 #y往事 ，添加一张 #y回忆 到抽牌堆中，消耗"
   }
 ]

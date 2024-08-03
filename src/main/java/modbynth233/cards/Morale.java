@@ -33,6 +33,7 @@ public class Morale extends MyBaseCard {
     public Morale() {
         super(ID, info);
         setCostUpgrade(UPG_COST);
+        setSelfRetain(true);
     }
 
     @Override

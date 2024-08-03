@@ -54,8 +54,8 @@
   },
   "${modID}:ThornyShield": {
     "NAME": "荆棘盾",
-    "DESCRIPTION": "获得等同 敏捷 数的 荆棘 ，失去1点 敏捷 NL 消耗",
-    "UPGRADE_DESCRIPTION": "获得敏捷数 !M! 倍的 荆棘 ，失去1点 敏捷 NL 消耗"
+    "DESCRIPTION": "获得等同 敏捷 数的 荆棘 ，失去1点 敏捷",
+    "UPGRADE_DESCRIPTION": "获得敏捷数 !M! 倍的 荆棘 ，失去1点 敏捷"
   },
   "${modID}:Tumble": {
     "NAME": "翻滚",
@@ -292,8 +292,8 @@
   },
   "${modID}:Morale": {
     "NAME": "士气",
-    "DESCRIPTION": "下一张攻击双倍伤害",
-    "UPGRADE_DESCRIPTION": "下一张攻击双倍伤害"
+    "DESCRIPTION": "下一张攻击双倍伤害， 保留",
+    "UPGRADE_DESCRIPTION": "下一张攻击双倍伤害， 保留"
   },
   "${modID}:Charge": {
     "NAME": "蓄力",
@@ -307,13 +307,13 @@
   },
   "${modID}:Flashback": {
     "NAME": "追忆",
-    "DESCRIPTION": "往消耗牌组中添加一张“往事”，添加一张“回忆”到抽牌堆中 NL 消耗",
-    "UPGRADE_DESCRIPTION": "往消耗牌组中添加一张“往事”，添加一张“回忆+”到抽牌堆中 NL 消耗"
+    "DESCRIPTION": "往消耗牌组中添加一张 modbynth233:往事 ，添加一张 modbynth233:回忆 到抽牌堆中 NL 消耗",
+    "UPGRADE_DESCRIPTION": "往消耗牌组中添加一张 modbynth233:往事 ，添加一张 modbynth233:回忆+ 到抽牌堆中 NL 消耗"
   },
   "${modID}:Nostalgia": {
     "NAME": "往事",
-    "DESCRIPTION": "获得等于 敏捷 数的 力量 ， 消耗 。 被回忆时，加入牌组，同时移除牌组中的所有“追忆”",
-    "UPGRADE_DESCRIPTION": "获得等于 敏捷 数的 力量 ， 消耗 。 被移除出牌组时，获得“枯木树枝”、“偏光棱镜”和“燃烧之血”"
+    "DESCRIPTION": "获得等于 敏捷 数的 力量 ， 消耗 。 被 modbynth233:回忆 时，加入牌组，同时 移除 牌组中的所有 modbynth233:追忆",
+    "UPGRADE_DESCRIPTION": "获得等于 敏捷 数的 力量 ， 消耗 。 被 移除 出牌组时，获得 modbynth233:枯木树枝 、 modbynth233:偏光棱镜 和 modbynth233:燃烧之血 "
   },
   "${modID}:SwiftBlock": {
     "NAME": "迅捷格挡",
