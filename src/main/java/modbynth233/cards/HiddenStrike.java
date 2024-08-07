@@ -29,7 +29,7 @@ public class HiddenStrike extends MyBaseCard {
     private static final int UPG_MAGIC_NUMBER = 1;
 
     public HiddenStrike() {
-        super(ID, info);
+        super(ID, info, 1, 6);
         setDamage(DAMAGE, UPG_DAMAGE);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         tags.add(CardTags.STRIKE);

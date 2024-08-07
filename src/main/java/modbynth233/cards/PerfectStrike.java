@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import modbynth233.ModByNth233;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
 
@@ -32,6 +33,8 @@ public class PerfectStrike extends MyBaseCard {
 
     public PerfectStrike() {
         super(ID, info);
+        this.portraitImg = null;
+        this.portrait = ModByNth233.cardAtlas.findRegion("red/attack/perfected_strike");
         setDamage(DAMAGE);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         tags.add(CardTags.STRIKE);

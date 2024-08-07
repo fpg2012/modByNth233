@@ -4,6 +4,7 @@ import com.megacrit.cardcrawl.actions.unique.DoppelgangerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import modbynth233.ModByNth233;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
 
@@ -27,6 +28,8 @@ public class DoppelgangerTinclad extends MyBaseCard {
 
     public DoppelgangerTinclad() {
         super(ID, info);
+        this.portraitImg = null;
+        this.portrait = ModByNth233.cardAtlas.findRegion("red/skill/doppelganger");
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         upgradeMagic = true;
         setExhaust(true);

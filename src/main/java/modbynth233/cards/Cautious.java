@@ -31,7 +31,7 @@ public class Cautious extends MyBaseCard {
     );
 
     public Cautious() {
-        super(ID, info);
+        super(ID, info, 0, 5);
         setBlock(BLOCK, UPG_BLOCK);
         upgradeBlock = true;
         setExhaust(true);

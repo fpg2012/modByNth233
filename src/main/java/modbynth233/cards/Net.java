@@ -35,7 +35,7 @@ public class Net extends MyBaseCard {
     );
 
     public Net() {
-        super(ID, info);
+        super(ID, info, 2, 5);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         setExhaust(true);
     }

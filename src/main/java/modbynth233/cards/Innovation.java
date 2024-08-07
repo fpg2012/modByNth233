@@ -34,7 +34,7 @@ public class Innovation extends MyBaseCard {
     );
 
     public Innovation() {
-        super(ID, info);
+        super(ID, info, 2, 0);
         setMagic(MAGIC_NUMBER);
         setCostUpgrade(UPG_COST);
         upgradeMagic = true;

@@ -27,7 +27,7 @@ public class Idea extends MyBaseCard {
     );
 
     public Idea() {
-        super(ID, info);
+        super(ID, info, 1, 9);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         // tags.add(CardTags.STRIKE);
         upgradeMagic = true;

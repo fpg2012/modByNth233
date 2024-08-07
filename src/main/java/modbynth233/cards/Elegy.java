@@ -31,7 +31,7 @@ public class Elegy extends MyBaseCard {
     );
 
     public Elegy() {
-        super(ID, info);
+        super(ID, info, 1, 3);
         setDamage(DAMAGE, UPG_DAMAGE);
         setMagic(MAGIC_NUMBER);
         upgradeDamage = true;

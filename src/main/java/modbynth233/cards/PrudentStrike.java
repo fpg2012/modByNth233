@@ -30,7 +30,7 @@ public class PrudentStrike extends MyBaseCard {
     );
 
     public PrudentStrike() {
-        super(ID, info);
+        super(ID, info, 3, 1);
         setDamage(DAMAGE, UPG_DAMAGE);
         setBlock(BLOCK, UPG_BLOCK);
         tags.add(CardTags.STRIKE);

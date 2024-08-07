@@ -33,7 +33,7 @@ public class Insult extends MyBaseCard {
     );
 
     public Insult() {
-        super(ID, info);
+        super(ID, info, 2, 1);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         upgradeMagic = true;
         setExhaust(true);

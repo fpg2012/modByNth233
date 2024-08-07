@@ -31,7 +31,7 @@ public class Charge extends MyBaseCard {
     );
 
     public Charge() {
-        super(ID, info);
+        super(ID, info, 0, 7);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         upgradeMagic = true;
     }

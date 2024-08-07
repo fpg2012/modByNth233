@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import modbynth233.ModByNth233;
 import modbynth233.character.Tinclad;
 import modbynth233.powers.RaiseShieldPower;
 import modbynth233.util.CardStats;
@@ -32,6 +33,8 @@ public class RaiseShield extends MyBaseCard {
 
     public RaiseShield() {
         super(ID, info);
+        this.portraitImg = null;
+        this.portrait = ModByNth233.cardAtlas.findRegion("red/skill/defend");
         this.cardsToPreview = new SwiftBlock();
     }
 

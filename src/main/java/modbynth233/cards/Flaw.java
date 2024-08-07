@@ -29,7 +29,7 @@ public class Flaw extends MyBaseCard {
     );
 
     public Flaw() {
-        super(ID, info);
+        super(ID, info, 1, 4);
         setDamage(DAMAGE, UPG_DAMAGE);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         upgradeMagic = true;

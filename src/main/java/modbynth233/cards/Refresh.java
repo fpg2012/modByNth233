@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.BlurPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
+import modbynth233.ModByNth233;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
 
@@ -31,6 +32,8 @@ public class Refresh extends MyBaseCard {
 
     public Refresh() {
         super(ID, info);
+        this.portraitImg = null;
+        this.portrait = ModByNth233.cardAtlas.findRegion("red/skill/second_wind");
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
 //        setCostUpgrade(UPG_COST);
 //        setExhaust(true);

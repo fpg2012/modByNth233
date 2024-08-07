@@ -31,7 +31,7 @@ public class BananaPeel extends MyBaseCard {
     );
 
     public BananaPeel() {
-        super(ID, info);
+        super(ID, info, 0, 3);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         setCostUpgrade(UPG_COST);
         setExhaust(true);

@@ -28,7 +28,7 @@ public class Dispose extends MyBaseCard {
     );
 
     public Dispose() {
-        super(ID, info);
+        super(ID, info, 1, 0);
         setMagic(MAGIC_NUMBER);
 //        upgradeMagic = true;
         randomExhaust = true;

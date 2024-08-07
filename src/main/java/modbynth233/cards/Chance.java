@@ -27,7 +27,7 @@ public class Chance extends MyBaseCard {
     );
 
     public Chance() {
-        super(ID, info);
+        super(ID, info, 0, 6);
         setEthereal(true);
     }
 

@@ -26,7 +26,7 @@ public class Preparation extends MyBaseCard {
     );
 
     public Preparation() {
-        super(ID, info);
+        super(ID, info, 3, 0);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         upgradeMagic = true;
         setExhaust(true);

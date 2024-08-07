@@ -32,7 +32,7 @@ public class Rope extends MyBaseCard {
     );
 
     public Rope() {
-        super(ID, info);
+        super(ID, info, 3, 5);
         setDamage(DAMAGE, UPG_DAMAGE);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         upgradeMagic = true;

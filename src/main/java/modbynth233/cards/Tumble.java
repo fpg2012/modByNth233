@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.BufferPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
+import modbynth233.ModByNth233;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
 
@@ -29,6 +30,8 @@ public class Tumble extends MyBaseCard {
 
     public Tumble() {
         super(ID, info);
+        this.portraitImg = null;
+        this.portrait = ModByNth233.cardAtlas.findRegion("green/skill/backflip");
     }
 
     @Override

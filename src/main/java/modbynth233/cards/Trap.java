@@ -19,7 +19,7 @@ public class Trap extends MyBaseCard {
     );
 
     public Trap() {
-        super(ID, info);
+        super(ID, info, 4, 5);
         setCostUpgrade(1);
         setExhaust(true);
     }

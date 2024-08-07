@@ -30,7 +30,7 @@ public class Prejudgement extends MyBaseCard {
     );
 
     public Prejudgement() {
-        super(ID, info);
+        super(ID, info, 2, 8);
         setBlock(BLOCK, UPG_BLOCK);
         setMagic(MAGIC_NUMBER);
     }

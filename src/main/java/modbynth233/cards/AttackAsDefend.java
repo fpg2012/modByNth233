@@ -30,7 +30,7 @@ public class AttackAsDefend extends MyBaseCard {
     );
 
     public AttackAsDefend() {
-        super(ID, info);
+        super(ID, info, 0, 2);
         setDamage(DAMAGE, UPG_DAMAGE);
         setMagic(MAGIC_NUMBER);
         setCostUpgrade(UPG_COST);

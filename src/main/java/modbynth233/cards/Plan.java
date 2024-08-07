@@ -28,7 +28,7 @@ public class Plan extends MyBaseCard {
     );
 
     public Plan() {
-        super(ID, info);
+        super(ID, info, 2, 6);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         upgradeMagic = true;
     }

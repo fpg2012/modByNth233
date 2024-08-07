@@ -26,7 +26,7 @@ public class Recall extends MyBaseCard {
     );
 
     public Recall() {
-        super(ID, info);
+        super(ID, info, 3, 2);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         upgradeMagic = true;
         setExhaust(true);

@@ -29,7 +29,7 @@ public class DummyAction extends MyBaseCard {
     );
 
     public DummyAction() {
-        super(ID, info);
+        super(ID, info, 1, 2);
         setDamage(DAMAGE);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         setCostUpgrade(UPG_COST);

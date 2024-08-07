@@ -22,7 +22,7 @@ public class Thorn extends MyBaseCard {
     private static final int UPG_MAGIC_NUMBER = 2;
 
     public Thorn() {
-        super(ID, info);
+        super(ID, info, 4, 1);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         upgradeMagic = true;
     }

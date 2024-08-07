@@ -43,6 +43,12 @@ public abstract class MyBaseCard extends BaseCard {
 //        applyMask(info);
     }
 
+    public MyBaseCard(String ID, CardStats info, int i, int j) {
+        super(ID, info);
+        this.portraitRegion = new TextureAtlas.AtlasRegion(ModByNth233.cardTexture2, j * WIDTH, i * HEIGHT, WIDTH, HEIGHT);
+        this.portrait = portraitRegion;
+    }
+
     protected void applyMask(CardStats info) {
         if (attackRegion == null) {
             attackMaskImage = new Texture(Gdx.files.internal("modbynth233/images/cards/attack/mask.png"));

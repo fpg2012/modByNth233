@@ -34,7 +34,7 @@ public class CupOfTea extends MyBaseCard {
     );
 
     public CupOfTea() {
-        super(ID, info);
+        super(ID, info, 5, 0);
         setExhaust(true);
     }
 

@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.ConstrictedPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
+import modbynth233.ModByNth233;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
 
@@ -36,6 +37,8 @@ public class Choke extends MyBaseCard {
 
     public Choke() {
         super(ID, info);
+        this.portraitImg = null;
+        this.portrait = ModByNth233.cardAtlas.findRegion("green/attack/choke");
         setExhaust(true);
     }
 

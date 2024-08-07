@@ -29,7 +29,7 @@ public class Rise extends MyBaseCard {
     );
 
     public Rise() {
-        super(ID, info);
+        super(ID, info, 3, 4);
         setMagic(MAGIC_NUMBER);
         setCostUpgrade(UPG_COST);
     }

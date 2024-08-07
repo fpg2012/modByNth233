@@ -26,7 +26,7 @@ public class Dodge extends MyBaseCard {
     private static final int UPG_MAGIC_NUMBER = 1;
 
     public Dodge() {
-        super(ID, info);
+        super(ID, info, 1, 1);
         setBlock(BLOCK, UPG_BLOCK);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         upgradeMagic = true;

@@ -29,7 +29,7 @@ public class Wait extends MyBaseCard {
     );
 
     public Wait() {
-        super(ID, info);
+        super(ID, info, 4, 7);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         upgradeMagic = true;
         setExhaust(true);

@@ -23,7 +23,7 @@ public class Strike extends MyBaseCard {
     private static final int UPG_DAMAGE = 3;
 
     public Strike() {
-        super(ID, info);
+        super(ID, info, 3, 8);
         setDamage(DAMAGE, UPG_DAMAGE);
         tags.add(CardTags.STARTER_STRIKE);
         tags.add(CardTags.STRIKE);

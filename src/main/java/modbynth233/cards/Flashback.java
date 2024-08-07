@@ -35,7 +35,7 @@ public class Flashback extends MyBaseCard {
     );
 
     public Flashback() {
-        super(ID, info);
+        super(ID, info, 1, 7);
         setExhaust(true);
         this.cardsToPreview = cardToObtain;
     }

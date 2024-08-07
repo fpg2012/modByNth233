@@ -33,7 +33,7 @@ public class Practice extends MyBaseCard {
     );
 
     public Practice() {
-        super(ID, info);
+        super(ID, info, 2, 7);
         setExhaust(true);
     }
 

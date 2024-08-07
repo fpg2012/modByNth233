@@ -31,7 +31,7 @@ public class CupOfCoffee extends MyBaseCard {
     );
 
     public CupOfCoffee() {
-        super(ID, info);
+        super(ID, info, 4, 9);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         upgradeMagic = true;
     }

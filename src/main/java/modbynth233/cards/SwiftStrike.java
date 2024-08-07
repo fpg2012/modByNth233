@@ -28,7 +28,7 @@ public class SwiftStrike extends MyBaseCard {
     );
 
     public SwiftStrike() {
-        super(ID, info);
+        super(ID, info, 3, 9);
         setBlock(DAMAGE);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         tags.add(CardTags.STRIKE);

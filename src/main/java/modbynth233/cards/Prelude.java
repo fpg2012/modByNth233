@@ -29,7 +29,7 @@ public class Prelude extends MyBaseCard {
     );
 
     public Prelude() {
-        super(ID, info);
+        super(ID, info, 2, 9);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         upgradeMagic = true;
         setExhaust(true);

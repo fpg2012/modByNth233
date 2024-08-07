@@ -30,7 +30,7 @@ public class Guerrilla extends MyBaseCard {
     );
 
     public Guerrilla() {
-        super(ID, info);
+        super(ID, info, 1, 5);
         setDamage(DAMAGE, UPG_DAMAGE);
         setBlock(BLOCK, UPG_BLOCK);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);

@@ -30,7 +30,7 @@ public class Rest extends MyBaseCard {
     );
 
     public Rest() {
-        super(ID, info);
+        super(ID, info, 3, 3);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         upgradeMagic = true;
         setExhaust(true);

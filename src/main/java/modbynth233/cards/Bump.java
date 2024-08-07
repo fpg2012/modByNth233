@@ -32,7 +32,7 @@ public class Bump extends MyBaseCard {
     );
 
     public Bump() {
-        super(ID, info);
+        super(ID, info, 0, 4);
         setDamage(DAMAGE);
         setCostUpgrade(UPG_COST);
         upgradeDamage = true;

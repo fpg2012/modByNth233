@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.ConstrictedPower;
+import modbynth233.ModByNth233;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
 
@@ -33,7 +34,8 @@ public class Whip extends MyBaseCard {
 
     public Whip() {
         super(ID, info);
-//        setMagic(MAGIC_NUMBER);
+        this.portraitImg = null;
+        this.portrait = ModByNth233.cardAtlas.findRegion("purple/attack/sash_whip");
         setDamage(DAMAGE, UPG_DAMAGE);
     }
 
@@ -47,8 +49,8 @@ public class Whip extends MyBaseCard {
 
         int amount = 0;
         for (int i = 0; i < m.powers.size(); i++) {
-            if (p.powers.get(i).getClass().equals(ConstrictedPower.class)) {
-                amount = p.powers.get(i).amount;
+            if (m.powers.get(i).getClass().equals(ConstrictedPower.class)) {
+                amount = m.powers.get(i).amount;
                 break;
             }
         }
@@ -56,7 +58,6 @@ public class Whip extends MyBaseCard {
         if (amount > 0) {
             addToBot(new DamageAction(m, new DamageInfo(p, amount, type)));
             addToBot(new WaitAction(0.1F));
-            addToBot(new ApplyPowerAction(m, p, new ConstrictedPower(m, p, -this.magicNumber), -this.magicNumber));
         }
     }
 

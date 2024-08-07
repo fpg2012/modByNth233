@@ -51,6 +51,7 @@ public class ModByNth233 implements
     public static final Logger logger = LogManager.getLogger(modID); //Used to output to the console.
     public static TextureAtlas cardAtlas = null;
     public static Texture cardTexture;
+    public static Texture cardTexture2;
 
     //This is used to prefix the IDs of various objects like cards and relics,
     //to avoid conflicts between different mods using the same name for things.
@@ -230,7 +231,8 @@ public class ModByNth233 implements
     @Override
     public void receiveEditCards() {
         cardAtlas = new TextureAtlas(Gdx.files.internal("cards/cards.atlas"));
-        cardTexture = new Texture(Gdx.files.internal("modbynth233/images/cards/card_texture.png"));
+        cardTexture = new Texture(Gdx.files.internal("modbynth233/images/cards/card_texture_2.png"));
+        cardTexture2 = new Texture(Gdx.files.internal("modbynth233/images/cards/card_texture.png"));
         new AutoAdd(modID)
                 .packageFilter(BaseCard.class)
                 .setDefaultSeen(true)

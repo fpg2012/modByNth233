@@ -28,7 +28,7 @@ public class ThornyShield extends MyBaseCard {
     );
 
     public ThornyShield() {
-        super(ID, info);
+        super(ID, info, 4, 2);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         upgradeMagic = true;
     }

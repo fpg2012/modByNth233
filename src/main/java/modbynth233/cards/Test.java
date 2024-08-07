@@ -26,7 +26,7 @@ public class Test extends MyBaseCard {
     );
 
     public Test() {
-        super(ID, info);
+        super(ID, info, 4, 0);
         setDamage(DAMAGE);
         setMagic(MAGIC_NUMBER);
         this.cardsToPreview = new Chance();

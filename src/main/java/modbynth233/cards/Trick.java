@@ -26,7 +26,7 @@ public class Trick extends MyBaseCard {
     );
 
     public Trick() {
-        super(ID, info);
+        super(ID, info, 4, 6);
         setMagic(MAGIC_NUMBER);
         setCostUpgrade(UPG_COST);
     }

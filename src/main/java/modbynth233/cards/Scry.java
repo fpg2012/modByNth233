@@ -31,7 +31,7 @@ public class Scry extends MyBaseCard {
     );
 
     public Scry() {
-        super(ID, info);
+        super(ID, info, 3, 6);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         upgradeMagic = true;
     }

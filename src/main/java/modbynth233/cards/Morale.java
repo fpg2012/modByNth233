@@ -31,7 +31,7 @@ public class Morale extends MyBaseCard {
     );
 
     public Morale() {
-        super(ID, info);
+        super(ID, info, 2, 4);
         setCostUpgrade(UPG_COST);
         setSelfRetain(true);
     }

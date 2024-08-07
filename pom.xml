@@ -24,7 +24,7 @@
 
     <!-- This information will be displayed in ModTheSpire, the modded launcher. -->
     <name>ModByNth233</name>
-    <version>1.2.3</version>
+    <version>1.2.5</version>
     <!-- Avoid using \ in this description, as they can cause the description to fail to load. -->
     <!-- If you really want to use them, you'll need to "escape" them by putting another one in front, like \\ -->
     <description>杀戮尖塔mod。意在设计一个机制简洁、以敏捷为核心的角色。 \n GitHub: https://github.com/fpg2012/modByNth233</description>

@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
+import modbynth233.ModByNth233;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
 
@@ -33,6 +34,8 @@ public class TurnAroundStrike extends MyBaseCard {
 
     public TurnAroundStrike() {
         super(ID, info);
+        this.portraitImg = null;
+        this.portrait = ModByNth233.cardAtlas.findRegion("purple/attack/follow_up");
         setDamage(DAMAGE, UPG_DAMAGE);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         tags.add(CardTags.STRIKE);

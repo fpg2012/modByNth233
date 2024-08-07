@@ -27,7 +27,7 @@ public class Mist extends MyBaseCard {
     );
 
     public Mist() {
-        super(ID, info);
+        super(ID, info, 2, 3);
         setDamage(DAMAGE, UPG_DAMAGE);
         setBlock(BLOCK, UPG_BLOCK);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);

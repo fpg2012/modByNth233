@@ -27,7 +27,7 @@ public class Withdraw extends MyBaseCard {
     );
 
     public Withdraw() {
-        super(ID, info);
+        super(ID, info, 4, 8);
         setBlock(BLOCK);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         upgradeMagic = true;

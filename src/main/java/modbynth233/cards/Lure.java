@@ -22,7 +22,7 @@ public class Lure extends MyBaseCard {
     private static final int MAGIC_NUMBER = 4;
 
     public Lure() {
-        super(ID, info);
+        super(ID, info, 2, 2);
         setBlock(BLOCK);
         setMagic(MAGIC_NUMBER);
     }

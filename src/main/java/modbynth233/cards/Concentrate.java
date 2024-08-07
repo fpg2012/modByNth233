@@ -30,7 +30,7 @@ public class Concentrate extends MyBaseCard {
     );
 
     public Concentrate() {
-        super(ID, info);
+        super(ID, info, 0, 8);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         upgradeMagic = true;
         setExhaust(true);

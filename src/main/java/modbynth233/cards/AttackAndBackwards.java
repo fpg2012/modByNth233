@@ -24,7 +24,7 @@ public class AttackAndBackwards extends MyBaseCard{
     private static final int LOSE_HP_AMOUNT = 5;
 
     public AttackAndBackwards() {
-        super(ID, info);
+        super(ID, info, 0, 1);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         upgradedMagicNumber = true;
         setExhaust(true);

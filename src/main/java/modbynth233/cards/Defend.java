@@ -21,7 +21,7 @@ public class Defend extends MyBaseCard {
     private static final int UPG_BLOCK = 3;
 
     public Defend() {
-        super(ID, info);
+        super(ID, info, 0, 9);
         setBlock(BLOCK, UPG_BLOCK);
         tags.add(CardTags.STARTER_DEFEND);
         upgradeBlock = true;

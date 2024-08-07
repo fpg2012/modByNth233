@@ -27,7 +27,7 @@ public class SpiderString extends MyBaseCard {
     );
 
     public SpiderString() {
-        super(ID, info);
+        super(ID, info, 3, 7);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         upgradeMagic = true;
     }
