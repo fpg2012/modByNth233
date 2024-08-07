@@ -40,11 +40,12 @@ public class AttackAsDefend extends MyBaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         int totalDamage = 0;
+
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL)));
         addToBot(new WaitAction(0.2F));
-        totalDamage += m.lastDamageTaken;
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL)));
         addToBot(new WaitAction(0.2F));
+
         totalDamage += m.lastDamageTaken;
 
         if (totalDamage > 0) {

@@ -15,8 +15,8 @@ import modbynth233.util.CardStats;
 
 public class Whip extends MyBaseCard {
     public static final String ID = makeID(Whip.class.getSimpleName());
-    private static final int DAMAGE = 0;
-    private static final int UPG_DAMAGE = 0;
+    private static final int DAMAGE = 6;
+    private static final int UPG_DAMAGE = 3;
     private static final int BLOCK = 0;
     private static final int UPG_BLOCK = 0;
     private static final int MAGIC_NUMBER = 1;
@@ -33,11 +33,18 @@ public class Whip extends MyBaseCard {
 
     public Whip() {
         super(ID, info);
-        setMagic(MAGIC_NUMBER);
+//        setMagic(MAGIC_NUMBER);
+        setDamage(DAMAGE, UPG_DAMAGE);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        DamageInfo.DamageType type = DamageInfo.DamageType.NORMAL;
+        if (upgraded) {
+            type = DamageInfo.DamageType.HP_LOSS;
+        }
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, type)));
+
         int amount = 0;
         for (int i = 0; i < m.powers.size(); i++) {
             if (p.powers.get(i).getClass().equals(ConstrictedPower.class)) {
@@ -47,10 +54,6 @@ public class Whip extends MyBaseCard {
         }
 
         if (amount > 0) {
-            DamageInfo.DamageType type = DamageInfo.DamageType.NORMAL;
-            if (upgraded) {
-                type = DamageInfo.DamageType.HP_LOSS;
-            }
             addToBot(new DamageAction(m, new DamageInfo(p, amount, type)));
             addToBot(new WaitAction(0.1F));
             addToBot(new ApplyPowerAction(m, p, new ConstrictedPower(m, p, -this.magicNumber), -this.magicNumber));

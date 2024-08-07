@@ -15,7 +15,7 @@ public class Armor extends MyBaseCard {
     private static final int UPG_DAMAGE = 0;
     private static final int BLOCK = 0;
     private static final int UPG_BLOCK = 0;
-    private static final int MAGIC_NUMBER = 4;
+    private static final int MAGIC_NUMBER = 5;
     private static final int UPG_MAGIC_NUMBER = 1;
     private static final int UPG_COST = 1;
 

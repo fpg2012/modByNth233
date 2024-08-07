@@ -19,8 +19,8 @@ public class BananaPeel extends MyBaseCard {
     private static final int BLOCK = 0;
     private static final int UPG_BLOCK = 0;
     private static final int MAGIC_NUMBER = 10;
-    private static final int UPG_MAGIC_NUMBER = 10;
-    private static final int UPG_COST = 1;
+    private static final int UPG_MAGIC_NUMBER = 2;
+    private static final int UPG_COST = 0;
 
     public static final CardStats info = new CardStats(
             Tinclad.Meta.CARD_COLOR,
@@ -33,7 +33,7 @@ public class BananaPeel extends MyBaseCard {
     public BananaPeel() {
         super(ID, info);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
-        upgradeMagic = true;
+        setCostUpgrade(UPG_COST);
         setExhaust(true);
     }
 

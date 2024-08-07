@@ -16,7 +16,7 @@ public class Cautious extends MyBaseCard {
     public static final String ID = makeID(Cautious.class.getSimpleName());
     private static final int DAMAGE = 0;
     private static final int UPG_DAMAGE = 0;
-    private static final int BLOCK = 9;
+    private static final int BLOCK = 7;
     private static final int UPG_BLOCK = 3;
     private static final int MAGIC_NUMBER = 0;
     private static final int UPG_MAGIC_NUMBER = 0;
@@ -35,7 +35,6 @@ public class Cautious extends MyBaseCard {
         setBlock(BLOCK, UPG_BLOCK);
         upgradeBlock = true;
         setExhaust(true);
-        setInnate(true);
     }
 
     @Override
@@ -51,5 +50,6 @@ public class Cautious extends MyBaseCard {
     @Override
     public void upgrade() {
         super.upgrade();
+        setInnate(true);
     }
 }

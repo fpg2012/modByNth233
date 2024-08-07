@@ -11,12 +11,12 @@ import modbynth233.util.CardStats;
 
 public class SwiftStrike extends MyBaseCard {
     public static final String ID = makeID(SwiftStrike.class.getSimpleName());
-    private static final int DAMAGE = 6;
+    private static final int DAMAGE = 4;
     private static final int UPG_DAMAGE = 2;
     private static final int BLOCK = 6;
     private static final int UPG_BLOCK = 2;
-    private static final int MAGIC_NUMBER = 0;
-    private static final int UPG_MAGIC_NUMBER = 0;
+    private static final int MAGIC_NUMBER = 3;
+    private static final int UPG_MAGIC_NUMBER = 2;
     private static final int UPG_COST = 1;
 
     public static final CardStats info = new CardStats(
@@ -29,16 +29,17 @@ public class SwiftStrike extends MyBaseCard {
 
     public SwiftStrike() {
         super(ID, info);
-        setBlock(DAMAGE, UPG_DAMAGE);
+        setBlock(DAMAGE);
+        setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         tags.add(CardTags.STRIKE);
-        upgradeBlock = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAction(m, new DamageInfo(m, this.block, DamageInfo.DamageType.NORMAL), true));
-        addToBot(new WaitAction(0.1F));
-        addToBot(new DamageAction(m, new DamageInfo(m, this.block, DamageInfo.DamageType.NORMAL), true));
+        for (int i = 0; i < this.magicNumber; i++) {
+            addToBot(new DamageAction(m, new DamageInfo(m, this.block, DamageInfo.DamageType.NORMAL), true));
+            addToBot(new WaitAction(0.1F));
+        }
     }
 
     @Override

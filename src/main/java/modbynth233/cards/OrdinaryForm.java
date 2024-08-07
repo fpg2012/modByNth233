@@ -14,8 +14,8 @@ public class OrdinaryForm extends MyBaseCard {
     private static final int UPG_DAMAGE = 0;
     private static final int BLOCK = 0;
     private static final int UPG_BLOCK = 0;
-    private static final int MAGIC_NUMBER = 49;
-    private static final int UPG_MAGIC_NUMBER = 2;
+    private static final int MAGIC_NUMBER = 99;
+    private static final int UPG_MAGIC_NUMBER = 100;
     private static final int UPG_COST = 2;
     
     public static final CardStats info = new CardStats(
@@ -23,12 +23,12 @@ public class OrdinaryForm extends MyBaseCard {
             CardType.POWER,
             CardRarity.RARE,
             CardTarget.SELF,
-            2
+            3
     );
 
     public OrdinaryForm() {
         super(ID, info);
-        setMagic(MAGIC_NUMBER);
+        setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         setEthereal(true);
     }
 

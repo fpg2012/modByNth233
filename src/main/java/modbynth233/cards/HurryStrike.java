@@ -51,7 +51,7 @@ public class HurryStrike extends MyBaseCard {
         addToBot(new WaitAction(0.2F));
         addToBot(new ExhaustAction(1, true, false, false));
 
-        randomizeDamage();
+        randomizeDamage(!upgraded);
     }
 
     @Override
@@ -64,15 +64,15 @@ public class HurryStrike extends MyBaseCard {
         super.upgrade();
     }
 
-    @Override
-    public void triggerWhenDrawn() {
-        super.triggerWhenDrawn();
-        randomizeDamage();
-    }
+//    @Override
+//    public void triggerWhenDrawn() {
+//        super.triggerWhenDrawn();
+//        randomizeDamage(!upgraded);
+//    }
 
-    private void randomizeDamage() {
-        int rnd = AbstractDungeon.cardRandomRng.random(-2, 3);
-        setDamage(damage + rnd);
+    private void randomizeDamage(boolean baseDamage) {
+        int rnd = AbstractDungeon.cardRandomRng.random(-1, 4);
+        setDamage(this.baseDamage + rnd);
     }
 
 }

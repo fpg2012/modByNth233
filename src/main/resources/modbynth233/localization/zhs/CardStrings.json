@@ -60,7 +60,7 @@
   "${modID}:Tumble": {
     "NAME": "翻滚",
     "DESCRIPTION": "失去2点 敏捷 NL 若无 modbynth233:缓冲 ，则获得一层 modbynth233:缓冲",
-    "UPGRADE_DESCRIPTION": "失去2点 敏捷 NL 若无 modbynth233缓冲 ，则获得一层 modbynth233:缓冲"
+    "UPGRADE_DESCRIPTION": "失去2点 敏捷 NL 若无 modbynth233:缓冲 ，则获得一层 modbynth233:缓冲"
   },
   "${modID}:Chance": {
     "NAME": "良机",
@@ -79,8 +79,8 @@
   },
   "${modID}:Refresh": {
     "NAME": "重整旗鼓",
-    "DESCRIPTION": "失去1点 敏捷 ，获得1层 modbynth233:残影 NL 将负 敏捷 归零",
-    "UPGRADE_DESCRIPTION": "失去1点 敏捷 ，获得1层 modbynth233:残影 NL 将负 敏捷 归零"
+    "DESCRIPTION": "失去1点 敏捷 ，获得 !M! 层 modbynth233:残影 NL 将负 敏捷 归零",
+    "UPGRADE_DESCRIPTION": "失去1点 敏捷 ，获得 !M! 层 modbynth233:残影 NL 将负 敏捷 归零"
   },
   "${modID}:Rise": {
     "NAME": "奋不顾身",
@@ -139,8 +139,8 @@
   },
   "${modID}:HurryStrike": {
     "NAME": "匆忙打击",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害 NL 随机 消耗 1张手牌 NL 伤害随机增减",
-    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害 NL 随机 消耗 1张手牌 NL 伤害随机增减"
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害 NL 随机 消耗 1张手牌 NL 本卡伤害随机增减",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害 NL 随机 消耗 1张手牌 NL 本卡伤害基于上次造成伤害的随机增减"
   },
   "${modID}:Prejudgement": {
     "NAME": "预判",
@@ -179,8 +179,8 @@
   },
   "${modID}:Idea": {
     "NAME": "点子",
-    "DESCRIPTION": "不可打出 NL 被 消耗 时，获得 [E] ，抽2张牌",
-    "UPGRADE_DESCRIPTION": "不可打出 NL 被 消耗 时，获得 [E] [E] ，抽2张牌",
+    "DESCRIPTION": "不可打出 NL 被 消耗 时，获得 [E] [E]  ，抽2张牌",
+    "UPGRADE_DESCRIPTION": "不可打出 NL 被 消耗 时，获得 [E] [E] [E] ，抽2张牌",
     "EXTENDED_DESCRIPTION": [
       "这张牌不能被打出"
     ]
@@ -202,8 +202,8 @@
   },
   "${modID}:SwiftStrike": {
     "NAME": "快捷打击",
-    "DESCRIPTION": "造成 !B! 点伤害2次， 本牌攻击伤害受 敏捷 加成，不受 力量 加成",
-    "UPGRADE_DESCRIPTION": "造成 !B! 点伤害2次， 本牌攻击伤害受 敏捷 加成，不受 力量 加成"
+    "DESCRIPTION": "造成 !B! 点伤害 !M! 次， 本牌攻击伤害受 敏捷 加成，不受 力量 加成",
+    "UPGRADE_DESCRIPTION": "造成 !B! 点伤害 !M! 次， 本牌攻击伤害受 敏捷 加成，不受 力量 加成"
   },
   "${modID}:Guerrilla": {
     "NAME": "游击",
@@ -257,8 +257,8 @@
   },
   "${modID}:Whip": {
     "NAME": "鞭打",
-    "DESCRIPTION": "造成等同敌人 modbynth233:缠绕 层数的伤害， 减少 !M! 层 modbynth233:缠绕",
-    "UPGRADE_DESCRIPTION": "使敌人生命值减少等同 modbynth233:缠绕 层数的数值， 减少 !M! 层 modbynth233:缠绕"
+    "DESCRIPTION": "造成 !D! 点伤害，造成等同敌人 modbynth233:缠绕 层数的伤害",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，使敌人生命值减少等同 modbynth233:缠绕 层数的数值"
   },
   "${modID}:BananaPeel": {
     "NAME": "香蕉皮",
@@ -327,7 +327,7 @@
   },
   "${modID}:Cautious": {
     "NAME": "谨慎",
-    "DESCRIPTION": "获得 !B! 点 多层护甲 NL 固有 、 消耗",
+    "DESCRIPTION": "获得 !B! 点 多层护甲 NL 消耗",
     "UPGRADE_DESCRIPTION": "获得 !B! 点 多层护甲 NL 固有 、 消耗"
   }
 }
