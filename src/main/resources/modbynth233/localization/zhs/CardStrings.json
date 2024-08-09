@@ -179,8 +179,8 @@
   },
   "${modID}:Idea": {
     "NAME": "点子",
-    "DESCRIPTION": "不可打出 NL 被 消耗 时，获得 [E] [E]  ，抽2张牌",
-    "UPGRADE_DESCRIPTION": "不可打出 NL 被 消耗 时，获得 [E] [E] [E] ，抽2张牌",
+    "DESCRIPTION": "不可打出 NL 被 消耗 时 ， 获得 [E] [E] ， 抽2张牌",
+    "UPGRADE_DESCRIPTION": "不可打出 NL 被 消耗 时 ， 获得 [E] [E] [E] ， 抽2张牌",
     "EXTENDED_DESCRIPTION": [
       "这张牌不能被打出"
     ]
@@ -313,7 +313,7 @@
   "${modID}:Nostalgia": {
     "NAME": "往事",
     "DESCRIPTION": "获得等于 敏捷 数的 力量 ， 消耗 。 被 modbynth233:回忆 时，加入牌组，同时 移除 牌组中的所有 modbynth233:追忆",
-    "UPGRADE_DESCRIPTION": "获得等于 敏捷 数的 力量 ， 消耗 。 被 移除 出牌组时，获得 modbynth233:枯木树枝 、 modbynth233:偏光棱镜 和 modbynth233:燃烧之血 "
+    "UPGRADE_DESCRIPTION": "获得等于 敏捷 数的 力量 ， 消耗 。 被 移除 出牌组时，下一场战斗开始时获得三个神秘遗物 "
   },
   "${modID}:SwiftBlock": {
     "NAME": "迅捷格挡",

@@ -38,6 +38,7 @@ public class Flashback extends MyBaseCard {
         super(ID, info, 1, 7);
         setExhaust(true);
         this.cardsToPreview = cardToObtain;
+        this.cardsToPreview.upgrade();
     }
 
     @Override
