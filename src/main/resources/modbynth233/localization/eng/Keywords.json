@@ -1,23 +1,91 @@
 [
   {
-    "PROPER_NAME": "This is displayed in the tooltip.",
+    "ID": "Constricted",
+    "PROPER_NAME": "Constricted",
     "NAMES": [
-      "these",
-      "are",
-      "detected",
-      "in",
-      "the",
-      "text"
+      "Constricted"
     ],
-    "DESCRIPTION": "This is displayed in the tooltip. Spaces should not be used be avoided in NAMES, with the exception of multi-word keywords (see next entry)."
+    "DESCRIPTION": "deal damage at the end of turn"
   },
   {
-    "PROPER_NAME": "Multiword Keyword",
+    "ID": "Chained",
+    "PROPER_NAME": "Chain",
     "NAMES": [
-      "multiword keyword",
-      "multiword_keyword",
-      "multiword_keywords"
+      "Chain",
+      "Chained"
     ],
-    "DESCRIPTION": "Make sure the first element in NAMES has no underscores. The rest should use _ in the place of spaces. In card text, you'll use the underscore versions."
+    "DESCRIPTION": "If the attack does not result in HP loss, deal the damage again. Chain N indicates deal chained damage at most N times"
+  },
+  {
+    "ID": "Blur",
+    "PROPER_NAME": "Blur",
+    "NAMES": [
+      "Blur"
+    ],
+    "DESCRIPTION": "You will not lose your #yBlock at the end of your turn."
+  },
+  {
+    "ID": "Chance",
+    "PROPER_NAME": "Chance",
+    "NAMES": [
+      "Chance",
+      "Chance+"
+    ],
+    "DESCRIPTION": "Card named Chance"
+  },
+  {
+    "ID": "Slow",
+    "PROPER_NAME": "Slow",
+    "NAMES": [
+      "Slow"
+    ],
+    "DESCRIPTION": "Every time you play a card, the enemy receive 10% more damage."
+  },
+  {
+    "ID": "Buffer",
+    "PROPER_NAME": "Buffer",
+    "NAMES": [
+      "Buffer"
+    ],
+    "DESCRIPTION": "Prevent you from HP loss"
+  },
+  {
+    "ID": "SwiftBlock",
+    "PROPER_NAME": "Swift Block",
+    "NAMES": [
+      "Swift Block",
+      "Swift Block+",
+      "Swift_Block+"
+    ],
+    "DESCRIPTION": " Gain #yblock, #yExhaust "
+  },
+  {
+    "ID": "Recall",
+    "PROPER_NAME": "Recall",
+    "NAMES": [
+      "Recall",
+      "Recall+",
+      "recalled",
+      "Recalled"
+    ],
+    "DESCRIPTION": "add exhausted cards back to your hand"
+  },
+  {
+    "ID": "Flashback",
+    "PROPER_NAME": "Flashback",
+    "NAMES": [
+      "Flashback",
+      "Flashback+"
+    ],
+    "DESCRIPTION": "a card named Flashback"
+  },
+  {
+    "ID": "Nostalgia",
+    "PROPER_NAME": "Nostalgia",
+    "NAMES": [
+      "Nostalgia",
+      "Nostalgia+"
+    ],
+    "DESCRIPTION": "A special Curse card. When removed from your deck, you will obtain #yDead #Branch , #Prismatic #yShard and #yBuring #yBlood "
   }
 ]

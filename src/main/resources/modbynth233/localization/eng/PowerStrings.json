@@ -4,5 +4,13 @@
     "DESCRIPTIONS": [
       "You are Very Cool and Strong."
     ]
+  },
+  "${modID}:RaiseShieldPower": {
+    "NAME": "Raise Shield",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain #b",
+      " #ySwift #Block",
+      " #ySwift #Blocks"
+    ]
   }
 }

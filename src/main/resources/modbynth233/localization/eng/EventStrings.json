@@ -17,5 +17,23 @@
       "[Leave]",
       "Select card to remove. (You can also stick extra text like this in here.)"
     ]
+  },
+  "${modID}:GiftFromIroncladEvent": {
+    "NAME": "Fall down",
+    "DESCRIPTIONS": [
+      "You suddenly feel a strong dizziness",
+      "You suddenly feel a strong dizziness NL In a state of confusion, you  NL falling into memories? NL Or gather all your sanity and force yourself to wake up?",
+      "You are lost in memories, as if you have found a mysterious power.",
+      "You woke up and found a wound on your arm."
+    ],
+    "OPTIONS": [
+      "[Continue]",
+      "[Recall] #rGain 12 ",
+      "。 #gGain ",
+      "[Keep your sanity] #rLose ",
+      " #rHP。 ",
+      " #rGain ",
+      "[Leave]"
+    ]
   }
 }

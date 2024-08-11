@@ -1,20 +1,333 @@
 {
-  "${modID}:ExampleCard": {
-    "NAME": "Name",
-    "DESCRIPTION": "Description.",
-    "UPGRADE_DESCRIPTION": "This will automatically be used if the card is upgraded. Remove it if unneeded.",
+  "${modID}:GiftFromIronclad": {
+    "NAME": "Gift From Ironclad",
+    "DESCRIPTION": "Deal !D! damage NL shuffle !M! Daze (s) to your draw pile",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage NL shuffle !M! Daze (s) to your draw pile",
     "EXTENDED_DESCRIPTION": [
-      "You can put more text in here.",
-      "If you need to use it for stuff.",
-      "Blizzard is a good example for this."
+      "Strength？"
     ]
   },
-  "${modID}:StrongStrike": {
-    "NAME": "Gift from Ironclad",
-    "DESCRIPTION": "Deal !D! Damage.",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL Innate.",
+  "${modID}:Strike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage"
+  },
+  "${modID}:Defend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! block",
+    "UPGRADE_DESCRIPTION": "Gain !B! block"
+  },
+  "${modID}:Dodge": {
+    "NAME": "Dodge",
+    "DESCRIPTION": "Gain !B! block, apply !M! weak to the enemy",
+    "UPGRADE_DESCRIPTION": "Gain !B! block, apply !M! weak to the enemy"
+  },
+  "${modID}:HiddenStrike": {
+    "NAME": "Hidden Strike",
+    "DESCRIPTION": "Deal !D! damage, apply !M! vulnerable to the enemy",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage, apply !M! vulnerable to the enemy"
+  },
+  "${modID}:Thorn": {
+    "NAME": "Thorn",
+    "DESCRIPTION": "Gain !M! thorn",
+    "UPGRADE_DESCRIPTION": "Gain !M! thorn"
+  },
+  "${modID}:Trap": {
+    "NAME": "Trap",
+    "DESCRIPTION": "Apply modbynth233:Slow NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Apply modbynth233:Slow NL Exhaust"
+  },
+  "${modID}:Lure": {
+    "NAME": "Lure",
+    "DESCRIPTION": "Gain !B! 点 block NL the enemy gain !M! block",
+    "UPGRADE_DESCRIPTION": "Gain !B! 点 block NL the enemy gain !M! block NL draw 1 card"
+  },
+  "${modID}:AttackAndBackwards": {
+    "NAME": "Attack 'n Withdraw",
+    "DESCRIPTION": "Lose 5 HP NL Gain !M! dexterity",
+    "UPGRADE_DESCRIPTION": "Lose 5 HP NL Gain !M! dexterity"
+  },
+  "${modID}:Preparation": {
+    "NAME": "Preparation",
+    "DESCRIPTION": "Gain !M! X dexterity NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Gain !M! X dexterity NL Exhaust"
+  },
+  "${modID}:ThornyShield": {
+    "NAME": "Thorny Shield",
+    "DESCRIPTION": "Gain !M! N thorns (N equals to the number of Dexterity stacks), Lose 1 dexterity",
+    "UPGRADE_DESCRIPTION": "Gain !M! N thorns (N equals to the number of Dexterity stacks), Lose 1 dexterity"
+  },
+  "${modID}:Tumble": {
+    "NAME": "Tumble",
+    "DESCRIPTION": "Lose 2 Dexterity NL if there is no modbynth233:Buffer , then gain modbynth233:缓冲",
+    "UPGRADE_DESCRIPTION": "Lose 2 Dexterity NL if there is no modbynth233:Buffer , then gain modbynth233:缓冲"
+  },
+  "${modID}:Chance": {
+    "NAME": "Chance",
+    "DESCRIPTION": "If the enemy does not intend to attack, NL draw 2 cards NL Ethereal",
+    "UPGRADE_DESCRIPTION": "If the enemy does not intend to attack, NL gain [E], draw 2 cards NL Ethereal"
+  },
+  "${modID}:Rope": {
+    "NAME": "Rope",
+    "DESCRIPTION": "Deal !D! damage，apply !M! modbynth233:Constricted to the enemy",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage，apply !M! modbynth233:Constricted to the enemy"
+  },
+  "${modID}:Net": {
+    "NAME": "Net",
+    "DESCRIPTION": "Apply !M! modbynth233:Constricted to ALL enemy and apply !M! Weak to them NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Apply !M! modbynth233:Constricted to ALL enemy and apply !M! Weak to them NL Exhaust"
+  },
+  "${modID}:Refresh": {
+    "NAME": "Refresh",
+    "DESCRIPTION": "Lose 1 Dexterity, Gain !M! modbynth233:Blur NL Zero your Dexterity if it is below zero",
+    "UPGRADE_DESCRIPTION": "Lose 1 Dexterity, Gain !M! modbynth233:Blur NL Zero your Dexterity if it is below zero"
+  },
+  "${modID}:Rise": {
+    "NAME": "Rise",
+    "DESCRIPTION": "Deal !M! N damage (N equals to the number of Dexterity stacks), lose 1 Dexterity",
+    "UPGRADE_DESCRIPTION": "Deal !M! N damage (N equals of the number of Dexterity stacks), lose 1 Dexterity"
+  },
+  "${modID}:Recall": {
+    "NAME": "Recall",
+    "DESCRIPTION": "Choose !M! exhausted cards, add them to your hand NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Choose !M! exhausted cards, add them to your hand NL Exhaust"
+  },
+  "${modID}:Dispose": {
+    "NAME": "Less is More",
+    "DESCRIPTION": "Exhaust 1 card at random NL Gain !M! + N Dexterity (N equals to the cost of the exhausted card) NL Draw 1 card",
+    "UPGRADE_DESCRIPTION": "Exhaust 1 card NL Gain !M! + N Dexterity (N equals to the cost of the exhausted card) NL Draw 1 card"
+  },
+  "${modID}:Flaw": {
+    "NAME": "Flaws Spotted！",
+    "DESCRIPTION": "Deal !D! damage NL If the enemy intends to attack, you gain !M! Dexterity",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage NL If the enemy intends to attack, you gain !M! Dexterity"
+  },
+  "${modID}:Wait": {
+    "NAME": "Wait a Second！",
+    "DESCRIPTION": "Lose !M! Dexterity, Gain [E] [E] [E] NL Exhausted",
+    "UPGRADE_DESCRIPTION": "Gain [E] [E] [E] NL Exhausted"
+  },
+  "${modID}:OrdinaryForm": {
+    "NAME": "Ordinary Form",
+    "DESCRIPTION": "Gain !M! Artifact NL Ethereal",
+    "UPGRADE_DESCRIPTION": "Gain !M! Artifact"
+  },
+  "${modID}:DummyAction": {
+    "NAME": "Dummy Action",
+    "DESCRIPTION": "Deal !D! damage NL Gain !M! Dexterity NL Lose !M! Dexterity at the end of your turn",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage NL Gain !M! Dexterity NL Lose !M! Dexterity at the end of your turn"
+  },
+  "${modID}:TurnAroundStrike": {
+    "NAME": "Turn Around Strike",
+    "DESCRIPTION": "Deal !D! damage, draw !M! card(s), discard 1 card",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage, draw !M! card(s), discard 1 card"
+  },
+  "${modID}:Test": {
+    "NAME": "Test",
+    "DESCRIPTION": "Deal !D! damage NL modbynth233:chain 3, if not chained, add a modbynth233:Chance to your hand",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage NL modbynth233:chain 3, if not chained, add a modbynth233:Chance+ to your hand"
+  },
+  "${modID}:Reflect": {
+    "NAME": "Reflect",
+    "DESCRIPTION": "Add Oridnary Form to your exhausted pile NL Shuffle  a Recall to your draw pile NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Add Oridnary Form to your exhausted pile NL Shuffle a Recall+ to your draw pile NL Exhaust"
+  },
+  "${modID}:Withdraw": {
+    "NAME": "Withdraw",
+    "DESCRIPTION": "Gain !B! block !M! times",
+    "UPGRADE_DESCRIPTION": "Gain !B! block !M! times"
+  },
+  "${modID}:HurryStrike": {
+    "NAME": "Hurry Strike",
+    "DESCRIPTION": "Deal !D! damage to ALL enemy NL Exhaust 1 card at random NL Randomize this card's base damage",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemy NL Exhaust 1 card at random NL Randomize this card's damage and set it as its new base damage"
+  },
+  "${modID}:Prejudgement": {
+    "NAME": "Prejudgement",
+    "DESCRIPTION": "Next turn, you gain !M! [E] , draw !M! cards, gain !B! block",
+    "UPGRADE_DESCRIPTION": "Next turn, you gain !M! [E] , draw !M! cards, gain !B! block"
+  },
+  "${modID}:Armor": {
+    "NAME": "Armor",
+    "DESCRIPTION": "If your Dexterity is not negative, Lose 1 Dexterity , Gain !M! Plated Armor",
+    "UPGRADE_DESCRIPTION": "If your Dexterity is not negative, Lose 1 Dexterity , Gain !M! Plated Armor"
+  },
+  "${modID}:Trick": {
+    "NAME": "Trick",
+    "DESCRIPTION": "Draw !M! card(s) from your discard pile",
+    "UPGRADE_DESCRIPTION": "Draw !M! card(s) from your discard pile"
+  },
+  "${modID}:Plan": {
+    "NAME": "Plan",
+    "DESCRIPTION": "Draw !M! cards, choose 1 card from your hand and put it onto the top of draw pile",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards, choose 1 card from your hand and put it onto the top of draw pile"
+  },
+  "${modID}:Prelude": {
+    "NAME": "Prelude",
+    "DESCRIPTION": "Draw !M! cards NL Gain 2 Dexterity NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards NL Gain 2 Dexterity NL Innate , Exhaust"
+  },
+  "${modID}:Concentrate": {
+    "NAME": "Concentrate",
+    "DESCRIPTION": "Gain !M! Strength and !M! Dexterity NL Draw 1 less card next turn NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Gain !M! Strength and !M! Dexterity NL Draw 1 less card next turn NL Exhaust"
+  },
+  "${modID}:Tighten": {
+    "NAME": "Tighten",
+    "DESCRIPTION": "Double the modbynth233:Constricted of the enemy NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Quadruple the modbynth233:Constricted of the enemy NL Exhaust"
+  },
+  "${modID}:Idea": {
+    "NAME": "Idea",
+    "DESCRIPTION": "Unplayable NL When Exhausted , Gain [E] [E] and draw 2 cards",
+    "UPGRADE_DESCRIPTION": "Unplayable NL When Exhausted , Gain [E] [E] [E] and draw 2 cards",
     "EXTENDED_DESCRIPTION": [
-      "Let me unleash my real potential!"
+      "This card is unplayable"
     ]
+  },
+  "${modID}:Mist": {
+    "NAME": "Mist",
+    "DESCRIPTION": "Gain !M! modbynth233:Blur",
+    "UPGRADE_DESCRIPTION": "Gain !M! modbynth233:Blur"
+  },
+  "${modID}:DoppelgangerTinclad": {
+    "NAME": "Doppelganger?",
+    "DESCRIPTION": "Next turn, gain X [E] and draw X cards NL exhausted",
+    "UPGRADE_DESCRIPTION": "Next turn, gain X + !M! [E] and draw X + !M! cards NL exhausted"
+  },
+  "${modID}:PrudentStrike": {
+    "NAME": "Prudent Strike",
+    "DESCRIPTION": "Deal !D! damage, gain !B! block next turn",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage, gain !B! block next turn"
+  },
+  "${modID}:SwiftStrike": {
+    "NAME": "Swift Strike",
+    "DESCRIPTION": "Deal !B! damage !M! times. NL Damage of this card is affected with Dexterity instead of Strength",
+    "UPGRADE_DESCRIPTION": "Deal !B! damage !M! times. NL Damage of this card is affected with Dexterity instead of Strength"
+  },
+  "${modID}:Guerrilla": {
+    "NAME": "Guerrilla",
+    "DESCRIPTION": "If the enemy intends to attack, Gain !B! 点 block !M! times. Otherwise deal !D! damage !M! times",
+    "UPGRADE_DESCRIPTION": "If the enemy intends to attack, Gain !B! 点 block !M! times. Otherwise deal !D! damage !M! times"
+  },
+  "${modID}:PerfectStrike": {
+    "NAME": "Perfected Strike",
+    "DESCRIPTION": "Deal 6 damage. Deals !M! additional damage for ALL your cards containing \"Strike\"",
+    "UPGRADE_DESCRIPTION": "Deal 6 damage. Deals !M! additional damage for ALL your cards containing \"Strike\""
+  },
+  "${modID}:CupOfCoffee": {
+    "NAME": "Cup of Coffee",
+    "DESCRIPTION": "Gain !M! Dexterity",
+    "UPGRADE_DESCRIPTION": "Gain !M! Dexterity"
+  },
+  "${modID}:Practice": {
+    "NAME": "Practice",
+    "DESCRIPTION": "Double your Dexterity this turn NL exhausted",
+    "UPGRADE_DESCRIPTION": "Double your Dexterity this turn"
+  },
+  "${modID}:SpiderString": {
+    "NAME": "Spider String",
+    "DESCRIPTION": "Apply !M! modbynth233:Constricted",
+    "UPGRADE_DESCRIPTION": "Apply !M! modbynth233:Constricted"
+  },
+  "${modID}:Transfer": {
+    "NAME": "Transfer Learning",
+    "DESCRIPTION": "Lose 1 Dexterity , gain !M! strength NL Exhausted",
+    "UPGRADE_DESCRIPTION": "Lose 1 Dexterity , gain !M! strength NL Exhausted"
+  },
+  "${modID}:CupOfTea": {
+    "NAME": "Cup of Tea",
+    "DESCRIPTION": "Double your Thorn NL Exhausted",
+    "UPGRADE_DESCRIPTION": "Double your Thorn"
+  },
+  "${modID}:Rest": {
+    "NAME": "Rest",
+    "DESCRIPTION": "Gain !M! N HP (N equals to the number of Dexterity), lose half of your Dexterity NL Exhausted",
+    "UPGRADE_DESCRIPTION": "Gain !M! N HP (N equals to the number of Dexterity), lose half of your Dexterity NL Exhausted"
+  },
+  "${modID}:Insult": {
+    "NAME": "Insult",
+    "DESCRIPTION": "Apply !M! strength to the enemy, Stun NL Exhausted",
+    "UPGRADE_DESCRIPTION": "Apply !M! strength to the enemy, Stun NL Exhausted"
+  },
+  "${modID}:Choke": {
+    "NAME": "Choke",
+    "DESCRIPTION": "If the enemy has been modbynth233:Constricted , Stun NL Exhaust",
+    "UPGRADE_DESCRIPTION": "If the enemy has been modbynth233:Constricted , Stun NL Shuffle a Choke into your draw pile NL Exhaust"
+  },
+  "${modID}:Whip": {
+    "NAME": "Whip",
+    "DESCRIPTION": "Deal !D! damage, deal additional damage equals to the stacks of modbynth233:缠绕 of the enemy",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage, deal additional damage equals to the stacks of modbynth233:缠绕 of the enemy"
+  },
+  "${modID}:BananaPeel": {
+    "NAME": "Banana Peel",
+    "DESCRIPTION": "Apply !M! Vulnerable , Exhausted",
+    "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable , Exhausted"
+  },
+  "${modID}:InstinctDefend": {
+    "NAME": "Instinct Defend",
+    "DESCRIPTION": "Gain !B! block",
+    "UPGRADE_DESCRIPTION": "Gain !B! block"
+  },
+  "${modID}:Bump": {
+    "NAME": "Bump",
+    "DESCRIPTION": "Deal !D! damage, deal additional damage equals to the stacks of your Thorn",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage, deal additional damage equals to the stacks of your Thorn"
+  },
+  "${modID}:Elegy": {
+    "NAME": "Elegy",
+    "DESCRIPTION": "Lose !M! HP, and the enemy lose !D! HP",
+    "UPGRADE_DESCRIPTION": "Lose !M! HP, and the enemy lose !D! HP"
+  },
+  "${modID}:AttackAsDefend": {
+    "NAME": "Attack as Defend",
+    "DESCRIPTION": "Deal !D! damage !M! times. Gain block equal to the last damage taken by the enemy",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage !M! times. Gain block equal to the last damage taken by the enemy"
+  },
+  "${modID}:Innovation": {
+    "NAME": "Innovation",
+    "DESCRIPTION": "Exhaust !M! cards, add !M! random cards to your hand NL Exhausted",
+    "UPGRADE_DESCRIPTION": "Exhaust !M! cards, add !M! random cards to your hand NL Exhausted"
+  },
+  "${modID}:Morale": {
+    "NAME": "Morale",
+    "DESCRIPTION": "Double the damage of your next attack, Retain",
+    "UPGRADE_DESCRIPTION": "Double the damage of your next attack, Retain"
+  },
+  "${modID}:Charge": {
+    "NAME": "Charge",
+    "DESCRIPTION": "The following !M! attack cards you play will be free",
+    "UPGRADE_DESCRIPTION": "The following !M! attack cards you play will be free"
+  },
+  "${modID}:Scry": {
+    "NAME": "Scry",
+    "DESCRIPTION": "At the start of your turn, Scry !M!",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, Scry !M!"
+  },
+  "${modID}:Flashback": {
+    "NAME": "Flashback",
+    "DESCRIPTION": "add a modbynth233:Nostalgia to your exhausted pile, shuffle a modbynth233:Recall into your draw pile NL Exhaust",
+    "UPGRADE_DESCRIPTION": "add a modbynth233:Nostalgia to your exhausted pile, shuffle a modbynth233:Recall+ into your draw pile NL Exhaust"
+  },
+  "${modID}:Nostalgia": {
+    "NAME": "Nostalgia",
+    "DESCRIPTION": "Gain Strength equals to your Dexterity, Exhausted . When modbynth233:Recalled , add to you deck, and remove ALL modbynth233:Flashback from your deck",
+    "UPGRADE_DESCRIPTION": "Gain Strength equals to your Dexterity, Exhausted . When removed from your deck, Obtain 3 relics at the start of your next combat "
+  },
+  "${modID}:SwiftBlock": {
+    "NAME": "Swift Block",
+    "DESCRIPTION": "Gain !B! block NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Gain !B! block NL Exhaust"
+  },
+  "${modID}:RaiseShield": {
+    "NAME": "Raise Shield",
+    "DESCRIPTION": "At the start of your turn, add a modbynth233:Swift_Block to your hand",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, add a modbynth233:Swift_Block to your hand NL Innate"
+  },
+  "${modID}:Cautious": {
+    "NAME": "Cautious",
+    "DESCRIPTION": "Gain !B! Plated Armor NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Gain !B! Plated Armor NL Innate , Exhaust"
   }
 }
