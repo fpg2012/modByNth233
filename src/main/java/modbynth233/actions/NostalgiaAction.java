@@ -1,5 +1,6 @@
 package modbynth233.actions;
 
+import basemod.abstracts.CustomSavable;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -16,7 +17,8 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.vfx.WallopEffect;
 import com.megacrit.cardcrawl.vfx.combat.FlashAtkImgEffect;
 
-public class NostalgiaAction extends AbstractGameAction {
+public class NostalgiaAction extends AbstractGameAction
+{
     private int count = 0;
 
     public NostalgiaAction() {

@@ -1,5 +1,6 @@
 package modbynth233.cards;
 
+import basemod.BaseMod;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -7,9 +8,12 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
+import modbynth233.ModByNth233;
 import modbynth233.actions.NostalgiaAction;
 import modbynth233.character.Tinclad;
 import modbynth233.util.CardStats;
+
+import javax.swing.*;
 
 public class Nostalgia extends MyBaseCard {
     public static final String ID = makeID(Nostalgia.class.getSimpleName());
@@ -51,7 +55,8 @@ public class Nostalgia extends MyBaseCard {
 
     @Override
     public void onRemoveFromMasterDeck() {
-        AbstractDungeon.actionManager.addToNextCombat(new NostalgiaAction());
+        NostalgiaAction action = new NostalgiaAction();
+        AbstractDungeon.actionManager.addToNextCombat(action);
         super.onRemoveFromMasterDeck();
     }
 
