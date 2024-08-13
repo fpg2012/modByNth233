@@ -68,7 +68,7 @@
       "recalled",
       "Recalled"
     ],
-    "DESCRIPTION": "add exhausted cards back to your hand"
+    "DESCRIPTION": "move exhausted cards back to your hand"
   },
   {
     "ID": "Flashback",

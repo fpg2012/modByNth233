@@ -129,8 +129,8 @@
   },
   "${modID}:Reflect": {
     "NAME": "Reflect",
-    "DESCRIPTION": "Add Oridnary Form to your exhausted pile NL Shuffle  a Recall to your draw pile NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Add Oridnary Form to your exhausted pile NL Shuffle a Recall+ to your draw pile NL Exhaust"
+    "DESCRIPTION": "Add Oridnary Form to your exhausted pile NL Shuffle  a modbynth233:Recall to your draw pile NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Add Oridnary Form to your exhausted pile NL Shuffle a modbynth233:Recall+ to your draw pile NL Exhaust"
   },
   "${modID}:Withdraw": {
     "NAME": "Withdraw",
@@ -154,8 +154,8 @@
   },
   "${modID}:Trick": {
     "NAME": "Trick",
-    "DESCRIPTION": "Draw !M! card(s) from your discard pile",
-    "UPGRADE_DESCRIPTION": "Draw !M! card(s) from your discard pile"
+    "DESCRIPTION": "Draw !M! card from your discard pile if it is not empty",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards from your discard pile if it is not empty"
   },
   "${modID}:Plan": {
     "NAME": "Plan",

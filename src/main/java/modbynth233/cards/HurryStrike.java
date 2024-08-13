@@ -38,7 +38,7 @@ public class HurryStrike extends MyBaseCard {
     }
 
     public HurryStrike(int realDamage) {
-        super(ID, info);
+        super(ID, info, 1, 8);
         setDamage(realDamage, UPG_DAMAGE);
         tags.add(CardTags.STRIKE);
         upgradeDamage = true;

@@ -129,8 +129,8 @@
   },
   "${modID}:Reflect": {
     "NAME": "反省",
-    "DESCRIPTION": "将“平凡形态”加入到消耗牌堆中 NL 添加一张“回忆”到抽牌堆中 NL 消耗",
-    "UPGRADE_DESCRIPTION": "将“平凡形态”加入到消耗牌堆中 NL 添加一张“回忆+”到抽牌堆中 NL 消耗"
+    "DESCRIPTION": "将“平凡形态”加入到消耗牌堆中 NL 添加一张 modbynth233:回忆”到抽牌堆中 NL 消耗",
+    "UPGRADE_DESCRIPTION": "将“平凡形态”加入到消耗牌堆中 NL 添加一张 modbynth233:回忆+ 到抽牌堆中 NL 消耗"
   },
   "${modID}:Withdraw": {
     "NAME": "后撤步",
@@ -154,8 +154,8 @@
   },
   "${modID}:Trick": {
     "NAME": "戏法",
-    "DESCRIPTION": "从弃牌堆抽取 !M! 张牌",
-    "UPGRADE_DESCRIPTION": "从弃牌堆抽取 !M! 张牌"
+    "DESCRIPTION": "若弃牌堆非空，从弃牌堆抽取 !M! 张牌",
+    "UPGRADE_DESCRIPTION": "若弃牌堆非空，从弃牌堆抽取 !M! 张牌"
   },
   "${modID}:Plan": {
     "NAME": "规划",
@@ -169,8 +169,8 @@
   },
   "${modID}:Concentrate": {
     "NAME": "专注",
-    "DESCRIPTION": "下回合少抽一张牌 、 !M! 层 力量 、 !M! 层 敏捷 NL 消耗",
-    "UPGRADE_DESCRIPTION": "下回合少抽一张牌 、 !M! 层 力量 、 !M! 层 敏捷 NL 消耗"
+    "DESCRIPTION": "下回合少抽一张牌， 获得 !M! 层 力量 、 !M! 层 敏捷 NL 消耗",
+    "UPGRADE_DESCRIPTION": "下回合少抽一张牌， 获得 !M! 层 力量 、 !M! 层 敏捷 NL 消耗"
   },
   "${modID}:Tighten": {
     "NAME": "收紧",

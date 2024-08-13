@@ -66,17 +66,6 @@
     "DESCRIPTION": " 获得 #y格挡， #y消耗 "
   },
   {
-    "ID": "TempCard",
-    "PROPER_NAME": "临时获得",
-    "NAMES": [
-      "迅捷格挡",
-      "迅捷格挡+",
-      "良机",
-      "良机+"
-    ],
-    "DESCRIPTION": "临时获得的卡牌只能在本次战斗中使用，不会加入到牌组中"
-  },
-  {
     "ID": "Recall",
     "PROPER_NAME": "回忆",
     "NAMES": [

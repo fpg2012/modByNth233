@@ -37,7 +37,9 @@ public class Wait extends MyBaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, -this.magicNumber), -this.magicNumber));
+        if (!upgraded) {
+            addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, -this.magicNumber), -this.magicNumber));
+        }
         addToBot(new WaitAction(0.1F));
         addToBot(new GainEnergyAction(3));
     }
