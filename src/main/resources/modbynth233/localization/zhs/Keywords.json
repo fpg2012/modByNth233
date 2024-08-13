@@ -70,9 +70,11 @@
     "PROPER_NAME": "回忆",
     "NAMES": [
       "回忆",
-      "回忆+"
+      "回忆+",
+      "追忆",
+      "追忆+"
     ],
-    "DESCRIPTION": " 把消耗牌堆中的牌移回手牌 "
+    "DESCRIPTION": "一张名为回忆的牌，能把消耗牌堆中的牌移回手牌 "
   },
   {
     "ID": "SpecialRelic",

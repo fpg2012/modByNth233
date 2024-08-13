@@ -20,9 +20,9 @@ public class Dodge extends MyBaseCard {
             2
     );
 
-    private static final int BLOCK = 12;
-    private static final int UPG_BLOCK = 4;
-    private static final int MAGIC_NUMBER = 1;
+    private static final int BLOCK = 14;
+    private static final int UPG_BLOCK = 2;
+    private static final int MAGIC_NUMBER = 2;
     private static final int UPG_MAGIC_NUMBER = 1;
 
     public Dodge() {

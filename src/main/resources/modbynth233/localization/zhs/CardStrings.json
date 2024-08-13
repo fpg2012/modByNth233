@@ -129,7 +129,7 @@
   },
   "${modID}:Reflect": {
     "NAME": "反省",
-    "DESCRIPTION": "将“平凡形态”加入到消耗牌堆中 NL 添加一张 modbynth233:回忆”到抽牌堆中 NL 消耗",
+    "DESCRIPTION": "将“平凡形态”加入到消耗牌堆中 NL 添加一张 modbynth233:回忆 到抽牌堆中 NL 消耗",
     "UPGRADE_DESCRIPTION": "将“平凡形态”加入到消耗牌堆中 NL 添加一张 modbynth233:回忆+ 到抽牌堆中 NL 消耗"
   },
   "${modID}:Withdraw": {
